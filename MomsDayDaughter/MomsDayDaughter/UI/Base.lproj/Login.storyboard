@@ -124,7 +124,7 @@
                     <viewLayoutGuide key="safeArea" id="3KQ-hD-OVY"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+            <point key="canvasLocation" x="54" y="27"/>
         </scene>
         <!--Main-->
         <scene sceneID="Wzl-9W-hCc">
@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="53" y="472"/>
         </scene>
-        <!--LoginVC-->
+        <!--Sign UpVC-->
         <scene sceneID="WzX-Xg-3t5">
             <objects>
-                <viewController id="e2g-xJ-Txs" customClass="LoginVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="e2g-xJ-Txs" customClass="SignUpVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T1o-ns-ECj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,22 +161,24 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Juf-if-jmE">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaT-GL-AyI">
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                                <connections>
+                                    <segue destination="1ql-F9-L72" kind="embed" id="B70-rJ-VC2"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8BN-xa-gQr" firstAttribute="trailing" secondItem="Cs5-xN-PhV" secondAttribute="trailing" id="5el-kw-1G0"/>
                             <constraint firstItem="zDJ-r9-wPc" firstAttribute="trailing" secondItem="Cs5-xN-PhV" secondAttribute="trailing" id="5jf-1M-XFw"/>
-                            <constraint firstItem="Juf-if-jmE" firstAttribute="leading" secondItem="Cs5-xN-PhV" secondAttribute="leading" id="Efv-IQ-vvM"/>
-                            <constraint firstItem="Juf-if-jmE" firstAttribute="top" secondItem="zDJ-r9-wPc" secondAttribute="bottom" id="IRE-Xb-jlm"/>
-                            <constraint firstItem="8BN-xa-gQr" firstAttribute="top" secondItem="Juf-if-jmE" secondAttribute="bottom" id="Lv3-a6-nGp"/>
+                            <constraint firstItem="OaT-GL-AyI" firstAttribute="leading" secondItem="Cs5-xN-PhV" secondAttribute="leading" id="IRI-Kx-11X"/>
+                            <constraint firstItem="OaT-GL-AyI" firstAttribute="trailing" secondItem="Cs5-xN-PhV" secondAttribute="trailing" id="PmP-0U-FX6"/>
                             <constraint firstItem="8BN-xa-gQr" firstAttribute="leading" secondItem="Cs5-xN-PhV" secondAttribute="leading" id="TaD-Co-cYq"/>
                             <constraint firstItem="zDJ-r9-wPc" firstAttribute="leading" secondItem="Cs5-xN-PhV" secondAttribute="leading" id="WTS-CM-7fY"/>
-                            <constraint firstItem="Juf-if-jmE" firstAttribute="trailing" secondItem="Cs5-xN-PhV" secondAttribute="trailing" id="hXX-I1-Ryg"/>
+                            <constraint firstItem="OaT-GL-AyI" firstAttribute="top" secondItem="zDJ-r9-wPc" secondAttribute="bottom" id="c5u-rd-JDW"/>
                             <constraint firstItem="zDJ-r9-wPc" firstAttribute="top" secondItem="Cs5-xN-PhV" secondAttribute="top" id="izR-vt-7jp"/>
+                            <constraint firstItem="8BN-xa-gQr" firstAttribute="top" secondItem="OaT-GL-AyI" secondAttribute="bottom" id="jX3-sC-ZwA"/>
                             <constraint firstItem="8BN-xa-gQr" firstAttribute="bottom" secondItem="Cs5-xN-PhV" secondAttribute="bottom" id="nVE-gg-FYd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cs5-xN-PhV"/>
@@ -186,24 +188,16 @@
             </objects>
             <point key="canvasLocation" x="893.60000000000002" y="26.53673163418291"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="ndf-Is-ApQ">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="dne-Wn-t6K" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kOI-JP-etU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1535" y="23"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="ysF-y1-Izf">
             <objects>
-                <viewController id="4eN-qT-aBW" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wCE-Hb-uJ9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="signUpFirst" id="4eN-qT-aBW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="wCE-Hb-uJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5oO-qi-WHN">
-                                <rect key="frame" x="47.5" y="149" width="280" height="204"/>
+                                <rect key="frame" x="47.5" y="177.5" width="280" height="204"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ILO-pw-Nin">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
@@ -300,27 +294,36 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hxq-wn-tEB" firstAttribute="bottom" secondItem="5oO-qi-WHN" secondAttribute="bottom" constant="314" id="YYX-bP-saM"/>
+                            <constraint firstItem="5oO-qi-WHN" firstAttribute="centerY" secondItem="wCE-Hb-uJ9" secondAttribute="centerY" id="8Gk-6M-z4O"/>
                             <constraint firstItem="5oO-qi-WHN" firstAttribute="centerX" secondItem="wCE-Hb-uJ9" secondAttribute="centerX" id="afU-e0-pkP"/>
-                            <constraint firstItem="5oO-qi-WHN" firstAttribute="top" secondItem="hxq-wn-tEB" secondAttribute="top" constant="129" id="wyy-TR-agI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hxq-wn-tEB"/>
                     </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="667"/>
+                    <size key="freeformSize" width="375" height="559"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lde-aI-tx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2445.5999999999999" y="-177.66116941529236"/>
+            <point key="canvasLocation" x="2559" y="-360"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="bab-kg-GAH">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="1ql-F9-L72" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jpe-nO-lCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="27"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xb0-fQ-YjP">
             <objects>
-                <viewController id="ro4-Sl-15u" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UcR-IB-1uo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="signUpSecond" id="ro4-Sl-15u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="UcR-IB-1uo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="daR-5D-Yx6">
-                                <rect key="frame" x="47.5" y="149" width="280" height="180"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="daR-5D-Yx6">
+                                <rect key="frame" x="47.5" y="177.5" width="280" height="204"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ggE-eO-Ra0">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
@@ -369,7 +372,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gR5-hw-xrP">
-                                        <rect key="frame" x="0.0" y="60" width="280" height="60"/>
+                                        <rect key="frame" x="0.0" y="72" width="280" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인증번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQx-82-3Pm">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="20.5"/>
@@ -399,7 +402,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gaY-tn-YRR">
-                                        <rect key="frame" x="0.0" y="120" width="280" height="60"/>
+                                        <rect key="frame" x="0.0" y="144" width="280" height="60"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mam-dM-bn9">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
@@ -461,16 +464,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="daR-5D-Yx6" firstAttribute="top" secondItem="4iE-BT-xNb" secondAttribute="top" constant="129" id="94R-li-O7m"/>
-                            <constraint firstItem="4iE-BT-xNb" firstAttribute="bottom" secondItem="daR-5D-Yx6" secondAttribute="bottom" constant="363" id="SS3-oq-6dn"/>
-                            <constraint firstItem="daR-5D-Yx6" firstAttribute="centerX" secondItem="UcR-IB-1uo" secondAttribute="centerX" id="ues-2f-1g5"/>
+                            <constraint firstItem="daR-5D-Yx6" firstAttribute="centerY" secondItem="UcR-IB-1uo" secondAttribute="centerY" id="GuS-vA-ywX"/>
+                            <constraint firstItem="daR-5D-Yx6" firstAttribute="centerX" secondItem="UcR-IB-1uo" secondAttribute="centerX" id="m71-zy-Jld"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4iE-BT-xNb"/>
                     </view>
+                    <size key="freeformSize" width="375" height="559"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hed-TV-Xj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2445.5999999999999" y="532.98350824587715"/>
+            <point key="canvasLocation" x="2558" y="350"/>
         </scene>
     </scenes>
     <resources>

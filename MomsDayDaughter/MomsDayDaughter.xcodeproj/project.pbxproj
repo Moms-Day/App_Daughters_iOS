@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C90F693D21AE894A000DF237 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90F693C21AE894A000DF237 /* Shape.swift */; };
+		C962E07221EDC77E00CBAB6A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C962E07121EDC77E00CBAB6A /* SignUpVC.swift */; };
 		C963C25321AADB4800309467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963C25221AADB4800309467 /* AppDelegate.swift */; };
 		C963C25521AADB4800309467 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963C25421AADB4800309467 /* LoginVC.swift */; };
 		C963C25821AADB4800309467 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C963C25621AADB4800309467 /* Login.storyboard */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		C90F693C21AE894A000DF237 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		C962E07121EDC77E00CBAB6A /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		C963C24F21AADB4800309467 /* MomsDayDaughter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomsDayDaughter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C963C25221AADB4800309467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C963C25421AADB4800309467 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				C963C25421AADB4800309467 /* LoginVC.swift */,
+				C962E07121EDC77E00CBAB6A /* SignUpVC.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				C963C25521AADB4800309467 /* LoginVC.swift in Sources */,
 				C90F693D21AE894A000DF237 /* Shape.swift in Sources */,
 				C97ECC2A21AFA7F7000F9218 /* Color.swift in Sources */,
+				C962E07221EDC77E00CBAB6A /* SignUpVC.swift in Sources */,
 				C963C25321AADB4800309467 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

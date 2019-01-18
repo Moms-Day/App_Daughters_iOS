@@ -11,7 +11,7 @@ import UIKit
 
 enum Color{
     
-    case GREEN, LIGHTGREEN, GRAY
+    case GREEN, LIGHTGREEN, GRAY, WHITE
     
     func getColor() -> UIColor {
         switch self {
@@ -21,6 +21,8 @@ enum Color{
             return UIColor(red: 236/255, green: 236/255, blue: 208/255, alpha: 1)
         case .GRAY:
             return UIColor(red: 112/255, green: 112/255, blue: 112/255, alpha: 1)
+        case .WHITE:
+            return UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 2)
         }
     }
     

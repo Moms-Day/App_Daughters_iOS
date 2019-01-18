@@ -27,9 +27,8 @@ class BottomBorderToolbar: UIToolbar {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
+        self.clipsToBounds = true
         self.layer.addBottomBorderWithColor(color: Color.GRAY.getColor(), width: 1.0)
-    
-        
     }
 }
 
@@ -38,7 +37,7 @@ extension CALayer {
     func addBottomBorderWithColor(color: UIColor, width: CGFloat) {
         let border = CALayer()
         border.backgroundColor = color.cgColor
-        border.frame = CGRect(x: 0, y: self.frame.size.height, width: self.frame.size.width+100, height: width)
+        border.frame = CGRect(x: 0, y: self.frame.size.height-width, width: self.frame.size.width+100, height: width)
         self.addSublayer(border)
     }
 }
