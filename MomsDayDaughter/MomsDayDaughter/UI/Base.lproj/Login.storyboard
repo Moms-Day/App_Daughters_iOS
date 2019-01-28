@@ -158,6 +158,9 @@
                                 <items>
                                     <barButtonItem title="다음" width="393.5" id="M2e-SD-fZK">
                                         <color key="tintColor" red="0.69116908310000003" green="0.77511924509999997" blue="0.31752270459999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="nextButtonClick:" destination="e2g-xJ-Txs" id="UrF-X0-MEo"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
@@ -183,6 +186,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cs5-xN-PhV"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="completeSignUp" id="3YY-Y3-m7I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drB-3y-vOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,7 +9,11 @@
 import Foundation
 import UIKit
 
-class MainVC: UIViewController {
+class MainVC: UITabBarController {
+    
+    private var pageViewController: UIPageViewController!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

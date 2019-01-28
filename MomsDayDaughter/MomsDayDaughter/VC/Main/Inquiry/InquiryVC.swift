@@ -1,33 +1,37 @@
 //
-//  SignUpVC.swift
+//  InquiryVC.swift
 //  MomsDayDaughter
 //
-//  Created by daeun on 15/01/2019.
+//  Created by daeun on 24/01/2019.
 //  Copyright © 2019 daeun. All rights reserved.
 //
 
 import UIKit
 
-class SignUpVC: UIViewController {
-    
-    private var nowIndex = 0
+class InquiryVC: UIViewController {
     
     private var pageViewController: UIPageViewController!
     private lazy var viewControllers: [UIViewController] = {
         var viewControllers = [UIViewController]()
-        let storyboard = UIStoryboard(name: "Login", bundle: nil)
-        let firstIntroViewController = storyboard.instantiateViewController(withIdentifier: "signUpFirst")
-        let secondIntroViewController = storyboard.instantiateViewController(withIdentifier: "signUpSecond")
-        viewControllers.append(firstIntroViewController)
-        viewControllers.append(secondIntroViewController)
+        let storyboard = UIStoryboard(name: "Inquiry", bundle: nil)
+        let twoDaysAgoViewController = storyboard.instantiateViewController(withIdentifier: "InquiryContent")
+        let yesterdayViewController = storyboard.instantiateViewController(withIdentifier: "InquiryContent")
+        let todayViewController = storyboard.instantiateViewController(withIdentifier: "InquiryContent")
+        
+        viewControllers.append(twoDaysAgoViewController)
+        viewControllers.append(yesterdayViewController)
+        viewControllers.append(todayViewController)
         return viewControllers
-    }()
-    
+    } ()
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         pageViewController.dataSource = self
         pageViewController.delegate = self
-        pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: true, completion: nil)
+        
+        pageViewController.setViewControllers([viewControllers[2]], direction: .forward, animated: true, completion: nil)
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -35,19 +39,15 @@ class SignUpVC: UIViewController {
             pageViewController = vc
             pageViewController.dataSource = self
             pageViewController.delegate = self
-            pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: true, completion: nil)
+            pageViewController.setViewControllers([viewControllers[2]], direction: .forward, animated: true, completion: nil)
+            
         }
     }
-    @IBAction func nextButtonClick(_ sender: UIBarButtonItem) {
-        
-        performSegue(withIdentifier: "completeSignUp", sender: nil)
-    }
-    
 }
 
-extension SignUpVC: UIPageViewControllerDataSource {
+extension InquiryVC: UIPageViewControllerDataSource {
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        
         guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
         let prePageIndex = curlIndex - 1
         if prePageIndex < 0 {
@@ -58,7 +58,6 @@ extension SignUpVC: UIPageViewControllerDataSource {
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        
         guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
         let prePageIndex = curlIndex + 1
         if prePageIndex >= viewControllers.count {
@@ -69,7 +68,7 @@ extension SignUpVC: UIPageViewControllerDataSource {
     }
 }
 
-extension SignUpVC: UIPageViewControllerDelegate {
+extension InquiryVC: UIPageViewControllerDelegate {
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
         return viewControllers.count
     }
