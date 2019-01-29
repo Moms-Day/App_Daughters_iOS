@@ -8,13 +8,18 @@
 
 import UIKit
 
-class InquiryContentVC: UIViewController {
+class InquiryContentVC: UIViewController,UITableViewDelegate {
     
     var date: Date!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
     }
-
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
+                           shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer)
+        -> Bool {
+            return true
+    }
 }

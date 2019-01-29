@@ -14,9 +14,9 @@ class InquiryVC: UIViewController {
     private lazy var viewControllers: [UIViewController] = {
         var viewControllers = [UIViewController]()
         let storyboard = UIStoryboard(name: "Inquiry", bundle: nil)
-        let twoDaysAgoViewController = storyboard.instantiateViewController(withIdentifier: "InquiryContent")
-        let yesterdayViewController = storyboard.instantiateViewController(withIdentifier: "InquiryContent")
-        let todayViewController = storyboard.instantiateViewController(withIdentifier: "InquiryContent")
+        let twoDaysAgoViewController = storyboard.instantiateViewController(withIdentifier: "InquiryContent") as! InquiryContentVC
+        let yesterdayViewController = storyboard.instantiateViewController(withIdentifier: "InquiryContent") as! InquiryContentVC
+        let todayViewController = storyboard.instantiateViewController(withIdentifier: "InquiryContent") as! InquiryContentVC
         
         viewControllers.append(twoDaysAgoViewController)
         viewControllers.append(yesterdayViewController)
@@ -27,46 +27,44 @@ class InquiryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        pageViewController.dataSource = self
+//        pageViewController.dataSource = self
         pageViewController.delegate = self
-        
-        pageViewController.setViewControllers([viewControllers[2]], direction: .forward, animated: true, completion: nil)
 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? UIPageViewController {
             pageViewController = vc
-            pageViewController.dataSource = self
+            pageViewController.dataSource = nil
             pageViewController.delegate = self
-            pageViewController.setViewControllers([viewControllers[2]], direction: .forward, animated: true, completion: nil)
+            pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: false, completion: nil)
             
         }
     }
 }
 
-extension InquiryVC: UIPageViewControllerDataSource {
-    
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
-        let prePageIndex = curlIndex - 1
-        if prePageIndex < 0 {
-            return viewControllers.last
-        } else {
-            return viewControllers[prePageIndex]
-        }
-    }
-    
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
-        let prePageIndex = curlIndex + 1
-        if prePageIndex >= viewControllers.count {
-            return viewControllers.first
-        } else {
-            return viewControllers[prePageIndex]
-        }
-    }
-}
+//extension InquiryVC: UIPageViewControllerDataSource {
+//
+//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+//        guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
+//        let prePageIndex = curlIndex - 1
+//        if prePageIndex < 0 {
+//            return viewControllers.last
+//        } else {
+//            return viewControllers[prePageIndex]
+//        }
+//    }
+//
+//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+//        guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
+//        let prePageIndex = curlIndex + 1
+//        if prePageIndex >= viewControllers.count {
+//            return viewControllers.first
+//        } else {
+//            return viewControllers[prePageIndex]
+//        }
+//    }
+//}
 
 extension InquiryVC: UIPageViewControllerDelegate {
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
