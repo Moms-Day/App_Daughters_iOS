@@ -19,18 +19,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQW-gl-fv9">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="77" width="375" height="541"/>
                                 <connections>
                                     <segue destination="0zv-dk-By2" kind="embed" id="uDn-lT-nRq"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTy-Kz-JIB">
+                                <rect key="frame" x="166.5" y="38" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze5-oO-U3s">
+                                <rect key="frame" x="313" y="33.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VI-Ho-sgX">
+                                <rect key="frame" x="16" y="33.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="jQW-gl-fv9" firstAttribute="top" secondItem="gg7-kN-HeD" secondAttribute="top" id="6W8-jy-ZnE"/>
+                            <constraint firstItem="jQW-gl-fv9" firstAttribute="top" secondItem="NTy-Kz-JIB" secondAttribute="bottom" constant="18" id="Ia3-TJ-Rrz"/>
                             <constraint firstItem="jQW-gl-fv9" firstAttribute="trailing" secondItem="gg7-kN-HeD" secondAttribute="trailing" id="UpH-M4-jkM"/>
+                            <constraint firstItem="NTy-Kz-JIB" firstAttribute="top" secondItem="gg7-kN-HeD" secondAttribute="top" constant="18" id="X1D-9J-qPH"/>
+                            <constraint firstItem="5VI-Ho-sgX" firstAttribute="centerY" secondItem="NTy-Kz-JIB" secondAttribute="centerY" id="Xpx-g4-052"/>
+                            <constraint firstItem="NTy-Kz-JIB" firstAttribute="centerX" secondItem="w93-fF-n5j" secondAttribute="centerX" id="Zja-2y-pT2"/>
+                            <constraint firstItem="5VI-Ho-sgX" firstAttribute="leading" secondItem="gg7-kN-HeD" secondAttribute="leading" constant="16" id="fKf-gd-Bo5"/>
+                            <constraint firstItem="Ze5-oO-U3s" firstAttribute="centerY" secondItem="NTy-Kz-JIB" secondAttribute="centerY" id="gbz-qX-5bI"/>
                             <constraint firstItem="jQW-gl-fv9" firstAttribute="leading" secondItem="gg7-kN-HeD" secondAttribute="leading" id="k83-8e-SbF"/>
                             <constraint firstItem="jQW-gl-fv9" firstAttribute="bottom" secondItem="gg7-kN-HeD" secondAttribute="bottom" id="lPW-f4-35s"/>
+                            <constraint firstItem="gg7-kN-HeD" firstAttribute="trailing" secondItem="Ze5-oO-U3s" secondAttribute="trailing" constant="16" id="n9o-q3-S8g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gg7-kN-HeD"/>
                     </view>
