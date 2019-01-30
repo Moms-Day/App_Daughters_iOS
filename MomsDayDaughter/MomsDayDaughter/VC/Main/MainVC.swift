@@ -17,6 +17,12 @@ class MainVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = false
+        self.navigationItem.hidesBackButton = true
+        let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+        navigationItem.titleView = titleLabel
+        titleLabel.text = "메인"
+        titleLabel.textAlignment = .center
+        titleLabel.textColor = .black
     }
     
     override func viewWillAppear(_ animated: Bool) {
