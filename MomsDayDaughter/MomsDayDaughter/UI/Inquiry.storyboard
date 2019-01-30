@@ -21,22 +21,25 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQW-gl-fv9">
                                 <rect key="frame" x="0.0" y="77" width="375" height="541"/>
                                 <connections>
-                                    <segue destination="0zv-dk-By2" kind="embed" id="uDn-lT-nRq"/>
+                                    <segue destination="uTb-Pi-9pl" kind="embed" id="5KH-yv-QZk"/>
                                 </connections>
                             </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTy-Kz-JIB">
-                                <rect key="frame" x="166.5" y="38" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019.01.30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTy-Kz-JIB">
+                                <rect key="frame" x="112.5" y="38" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="a38-Ud-KkE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze5-oO-U3s">
-                                <rect key="frame" x="313" y="33.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze5-oO-U3s">
+                                <rect key="frame" x="323" y="30.5" width="36" height="36"/>
+                                <state key="normal" image="icon_inquiry_tomorrow.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VI-Ho-sgX">
-                                <rect key="frame" x="16" y="33.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VI-Ho-sgX">
+                                <rect key="frame" x="16" y="30.5" width="36" height="36"/>
+                                <state key="normal" image="icon_inquiry_yesterday.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -60,14 +63,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tba-iF-sXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="56.799999999999997" y="-1922.7886056971515"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="bH7-fQ-SYO">
-            <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" id="0zv-dk-By2" customClass="UIPageViewController" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qa8-hY-Gpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="780" y="-1923"/>
         </scene>
         <!--Inquiry ContentVC-->
         <scene sceneID="9ek-jL-2sR">
@@ -416,5 +411,17 @@
             </objects>
             <point key="canvasLocation" x="1496.8" y="-1924.137931034483"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="vSu-YY-M5Y">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="uTb-Pi-9pl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Fn-FD-M1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="-1923"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="icon_inquiry_tomorrow.png" width="36" height="36"/>
+        <image name="icon_inquiry_yesterday.png" width="36" height="36"/>
+    </resources>
 </document>

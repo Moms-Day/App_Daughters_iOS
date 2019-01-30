@@ -27,7 +27,7 @@ class InquiryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        pageViewController.dataSource = self
+        pageViewController.dataSource = self
         pageViewController.delegate = self
 
     }
@@ -35,36 +35,37 @@ class InquiryVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? UIPageViewController {
             pageViewController = vc
-            pageViewController.dataSource = nil
+            pageViewController.dataSource = self
             pageViewController.delegate = self
             pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: false, completion: nil)
+            
             
         }
     }
 }
 
-//extension InquiryVC: UIPageViewControllerDataSource {
-//
-//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-//        guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
-//        let prePageIndex = curlIndex - 1
-//        if prePageIndex < 0 {
-//            return viewControllers.last
-//        } else {
-//            return viewControllers[prePageIndex]
-//        }
-//    }
-//
-//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-//        guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
-//        let prePageIndex = curlIndex + 1
-//        if prePageIndex >= viewControllers.count {
-//            return viewControllers.first
-//        } else {
-//            return viewControllers[prePageIndex]
-//        }
-//    }
-//}
+extension InquiryVC: UIPageViewControllerDataSource {
+
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
+        let prePageIndex = curlIndex - 1
+        if prePageIndex < 0 {
+            return viewControllers.last
+        } else {
+            return viewControllers[prePageIndex]
+        }
+    }
+
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
+        let prePageIndex = curlIndex + 1
+        if prePageIndex >= viewControllers.count {
+            return viewControllers.first
+        } else {
+            return viewControllers[prePageIndex]
+        }
+    }
+}
 
 extension InquiryVC: UIPageViewControllerDelegate {
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
