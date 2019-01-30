@@ -25,9 +25,24 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+        navigationItem.titleView = titleLabel
+        titleLabel.text = "회원가입"
+        titleLabel.textAlignment = .center
+        titleLabel.textColor = .black
+        
+        navigationController?.isNavigationBarHidden = false
+        
+        
+        
         pageViewController.dataSource = self
         pageViewController.delegate = self
         pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: true, completion: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = false
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

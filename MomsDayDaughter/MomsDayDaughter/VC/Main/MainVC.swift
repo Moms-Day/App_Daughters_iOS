@@ -16,6 +16,11 @@ class MainVC: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+                navigationController?.isNavigationBarHidden = false
     }
     
 }
