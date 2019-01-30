@@ -43,6 +43,10 @@ class SignUpVC: UIViewController {
         performSegue(withIdentifier: "completeSignUp", sender: nil)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
+    
 }
 
 extension SignUpVC: UIPageViewControllerDataSource {
