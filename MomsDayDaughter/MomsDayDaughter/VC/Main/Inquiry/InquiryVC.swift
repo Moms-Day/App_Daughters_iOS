@@ -18,6 +18,10 @@ class InquiryVC: UIViewController {
         let yesterdayViewController = storyboard.instantiateViewController(withIdentifier: "InquiryContent") as! InquiryContentVC
         let todayViewController = storyboard.instantiateViewController(withIdentifier: "InquiryContent") as! InquiryContentVC
         
+        twoDaysAgoViewController.id = "twoDaysAgo"
+        yesterdayViewController.id = "yesterday"
+        todayViewController.id = "today"
+        
         viewControllers.append(twoDaysAgoViewController)
         viewControllers.append(yesterdayViewController)
         viewControllers.append(todayViewController)
@@ -35,8 +39,6 @@ class InquiryVC: UIViewController {
             pageViewController.dataSource = self
             pageViewController.delegate = self
             pageViewController.setViewControllers([viewControllers[2]], direction: .forward, animated: false, completion: nil)
-            
-            
         }
     }
 }
