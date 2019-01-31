@@ -38,7 +38,7 @@ class SignUpVC: UIViewController {
     
     @objc func finishSignUp() {
         let alert = UIAlertController(title: "회원가입이 완료되었습니다.", message: "", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: {(UIAlertAction) -> Void in _ = self.navigationController?.popToRootViewController(animated: true)}))
         self.present(alert, animated: true, completion: nil)
     }
     
