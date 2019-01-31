@@ -10,12 +10,14 @@ import UIKit
 
 class SignUpVC: UIViewController {
     
+    @IBOutlet weak var nextButton: TopBorderButton!
+    private var index = 0
     private var pageViewController: UIPageViewController!
     private lazy var viewControllers: [UIViewController] = {
         var viewControllers = [UIViewController]()
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
-        let firstIntroViewController = storyboard.instantiateViewController(withIdentifier: "signUpFirst")
-        let secondIntroViewController = storyboard.instantiateViewController(withIdentifier: "signUpSecond")
+        let firstIntroViewController = storyboard.instantiateViewController(withIdentifier: "signUpFirst") as! SignUpContentVC
+        let secondIntroViewController = storyboard.instantiateViewController(withIdentifier: "signUpSecond") as! SignUpContentVC
         viewControllers.append(firstIntroViewController)
         viewControllers.append(secondIntroViewController)
         return viewControllers
@@ -28,8 +30,17 @@ class SignUpVC: UIViewController {
         titleLabel.text = "회원가입"
         titleLabel.textAlignment = .center
         titleLabel.textColor = .black
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "완료", style: .plain, target: self, action: #selector(finishSignUp))
+        
         navigationController?.isNavigationBarHidden = false
         }
+    
+    @objc func finishSignUp() {
+        let alert = UIAlertController(title: "회원가입이 완료되었습니다.", message: "", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = false
@@ -38,41 +49,23 @@ class SignUpVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? UIPageViewController {
             pageViewController = vc
-            pageViewController.dataSource = self
+            pageViewController.dataSource = nil
             pageViewController.delegate = self
             pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: true, completion: nil)
         }
     }
     
-    @IBAction func nextButtonClick(_ sender: UIBarButtonItem) {
+    @IBAction func clickNextButton(_ sender: TopBorderButton) {
         
-        performSegue(withIdentifier: "completeSignUp", sender: nil)
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
-        self.view.endEditing(true)
-    }
-    
-}
-
-extension SignUpVC: UIPageViewControllerDataSource {
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let curlIndex = viewControllers.index(of: viewController) else {return nil}
-        switch curlIndex {
-        case 1:
-            return viewControllers[0]
-        default:
-            return nil
-        }
-    }
-    
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let curlIndex = viewControllers.index(of: viewController) else {return nil}
-        switch curlIndex {
+        switch index {
         case 0:
-            return viewControllers[1]
+            nextButton.setTitle("이전", for: UIControl.State.normal)
+            pageViewController.setViewControllers([viewControllers[1]], direction: .forward, animated: true, completion: nil)
+            index = 1
         default:
-            return nil
+            nextButton.setTitle("다음", for: UIControl.State.normal)
+            pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: true, completion: nil)
+            index = 0
         }
     }
 }
@@ -84,5 +77,16 @@ extension SignUpVC: UIPageViewControllerDelegate {
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
+    }
+}
+
+
+class SignUpContentVC: UIViewController {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 }

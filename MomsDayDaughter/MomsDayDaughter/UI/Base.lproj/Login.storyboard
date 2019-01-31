@@ -13,7 +13,7 @@
         <!--로그인-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,48 +143,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BN-xa-gQr">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem title="다음" width="393.5" id="M2e-SD-fZK">
-                                        <color key="tintColor" red="0.69116908310000003" green="0.77511924509999997" blue="0.31752270459999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <connections>
-                                            <action selector="nextButtonClick:" destination="e2g-xJ-Txs" id="UrF-X0-MEo"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaT-GL-AyI">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="553"/>
                                 <connections>
                                     <segue destination="1ql-F9-L72" kind="embed" id="B70-rJ-VC2"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFu-ki-h9b" customClass="TopBorderButton" customModule="MomsDayDaughter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="49p-GJ-RKD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="다음">
+                                    <color key="titleColor" red="0.69116908311843872" green="0.77511924505233765" blue="0.31752270460128784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickNextButton:" destination="e2g-xJ-Txs" eventType="touchUpInside" id="KA9-DD-N4L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8BN-xa-gQr" firstAttribute="trailing" secondItem="Cs5-xN-PhV" secondAttribute="trailing" id="5el-kw-1G0"/>
+                            <constraint firstItem="dFu-ki-h9b" firstAttribute="bottom" secondItem="Cs5-xN-PhV" secondAttribute="bottom" id="9zS-ww-JAO"/>
                             <constraint firstItem="OaT-GL-AyI" firstAttribute="top" secondItem="Cs5-xN-PhV" secondAttribute="top" id="IBp-Zt-i8Q"/>
                             <constraint firstItem="OaT-GL-AyI" firstAttribute="leading" secondItem="Cs5-xN-PhV" secondAttribute="leading" id="IRI-Kx-11X"/>
                             <constraint firstItem="OaT-GL-AyI" firstAttribute="trailing" secondItem="Cs5-xN-PhV" secondAttribute="trailing" id="PmP-0U-FX6"/>
-                            <constraint firstItem="8BN-xa-gQr" firstAttribute="leading" secondItem="Cs5-xN-PhV" secondAttribute="leading" id="TaD-Co-cYq"/>
-                            <constraint firstItem="8BN-xa-gQr" firstAttribute="top" secondItem="OaT-GL-AyI" secondAttribute="bottom" id="jX3-sC-ZwA"/>
-                            <constraint firstItem="8BN-xa-gQr" firstAttribute="bottom" secondItem="Cs5-xN-PhV" secondAttribute="bottom" id="nVE-gg-FYd"/>
+                            <constraint firstItem="dFu-ki-h9b" firstAttribute="leading" secondItem="Cs5-xN-PhV" secondAttribute="leading" id="SWD-UA-Iua"/>
+                            <constraint firstItem="dFu-ki-h9b" firstAttribute="top" secondItem="OaT-GL-AyI" secondAttribute="bottom" id="owk-6i-6eH"/>
+                            <constraint firstItem="Cs5-xN-PhV" firstAttribute="trailing" secondItem="dFu-ki-h9b" secondAttribute="trailing" id="v9S-Wq-Jb5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cs5-xN-PhV"/>
                     </view>
                     <connections>
-                        <segue destination="oG0-fM-ZcM" kind="show" identifier="completeSignUp" id="3YY-Y3-m7I"/>
+                        <outlet property="nextButton" destination="dFu-ki-h9b" id="ggc-z0-qRI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drB-3y-vOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1832.8" y="26.53673163418291"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up ContentVC-->
         <scene sceneID="ysF-y1-Izf">
             <objects>
-                <viewController storyboardIdentifier="signUpFirst" id="4eN-qT-aBW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUpFirst" id="4eN-qT-aBW" customClass="SignUpContentVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="wCE-Hb-uJ9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +216,7 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.47059154510000001" green="0.47058230639999998" blue="0.47058856490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -244,7 +246,7 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.47059154510000001" green="0.47058230639999998" blue="0.47058856490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="new-password"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -274,7 +276,7 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.47059154510000001" green="0.47058230639999998" blue="0.47058856490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="new-password"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -307,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="2684" y="26.53673163418291"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up ContentVC-->
         <scene sceneID="xb0-fQ-YjP">
             <objects>
-                <viewController storyboardIdentifier="signUpSecond" id="ro4-Sl-15u" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUpSecond" id="ro4-Sl-15u" customClass="SignUpContentVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="UcR-IB-1uo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,7 +345,7 @@
                                                         </constraints>
                                                         <color key="textColor" red="0.47059154510000001" green="0.47058230639999998" blue="0.47058856490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mD5-jk-qbr">
                                                         <rect key="frame" x="235" y="0.0" width="45" height="34.5"/>
@@ -386,7 +388,7 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.47059154510000001" green="0.47058230639999998" blue="0.47058856490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -418,7 +420,7 @@
                                                                 </constraints>
                                                                 <color key="textColor" red="0.47059154510000001" green="0.47058230639999998" blue="0.47058856490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="name"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -440,7 +442,7 @@
                                                                 </constraints>
                                                                 <color key="textColor" red="0.47059154510000001" green="0.47058230639999998" blue="0.47058856490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
