@@ -15,11 +15,5 @@ class InquiryContentVC: UIViewController,UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-    }
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
-                           shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer)
-        -> Bool {
-            return true
     }
 }

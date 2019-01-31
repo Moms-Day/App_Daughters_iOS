@@ -27,9 +27,6 @@ class InquiryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        pageViewController.dataSource = self
-        pageViewController.delegate = self
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,7 +34,7 @@ class InquiryVC: UIViewController {
             pageViewController = vc
             pageViewController.dataSource = self
             pageViewController.delegate = self
-            pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: false, completion: nil)
+            pageViewController.setViewControllers([viewControllers[2]], direction: .forward, animated: false, completion: nil)
             
             
         }
@@ -47,22 +44,26 @@ class InquiryVC: UIViewController {
 extension InquiryVC: UIPageViewControllerDataSource {
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
-        let prePageIndex = curlIndex - 1
-        if prePageIndex < 0 {
-            return viewControllers.last
-        } else {
-            return viewControllers[prePageIndex]
+        guard let curlIndex = viewControllers.index(of: viewController) else {return nil}
+        switch curlIndex {
+        case 1:
+            return viewControllers[0]
+        case 2:
+            return viewControllers[1]
+        default:
+            return nil
         }
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let curlIndex = viewControllers.index(of: viewController) else { return nil }
-        let prePageIndex = curlIndex + 1
-        if prePageIndex >= viewControllers.count {
-            return viewControllers.first
-        } else {
-            return viewControllers[prePageIndex]
+        guard let curlIndex = viewControllers.index(of: viewController) else {return nil}
+        switch curlIndex {
+        case 0:
+            return viewControllers[1]
+        case 1:
+            return viewControllers[2]
+        default:
+            return nil
         }
     }
 }
