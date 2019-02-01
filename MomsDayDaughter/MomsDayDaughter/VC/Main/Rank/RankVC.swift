@@ -9,22 +9,53 @@
 import UIKit
 
 class RankVC: UIViewController {
+    
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    private var pageViewController: UIPageViewController!
+    private lazy var viewControllers:[UIViewController] = {
+        var viewControllers = [UIViewController]()
+        let storyboard = UIStoryboard(name: "Rank", bundle: nil)
+        let rankHospitalVC = storyboard.instantiateViewController(withIdentifier: "RankContent") as! RankContentVC
+        let rankCareworkerVC = storyboard.instantiateViewController(withIdentifier: "RankContent") as! RankContentVC
+        
+        rankHospitalVC.id = true
+        rankCareworkerVC.id = false
+        
+        viewControllers.append(rankHospitalVC)
+        viewControllers.append(rankCareworkerVC)
+        return viewControllers
+    } ()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? UIPageViewController {
+            pageViewController = vc
+            pageViewController.dataSource = nil
+            pageViewController.delegate = self
+            pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: false, completion: nil)
+        }
     }
-    */
+    
+    @IBAction func adapterChanged(_ sender: UISegmentedControl) {
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: false, completion: nil)
+        default:
+            pageViewController.setViewControllers([viewControllers[1]], direction: .forward, animated: false, completion: nil)
+        }
+    }
+    
+}
 
+extension RankVC: UIPageViewControllerDelegate {
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return viewControllers.count
+    }
+    
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 0
+    }
 }
