@@ -56,13 +56,7 @@ extension CALayer {
     }
 }
 
-class scheduleDTO: UITableViewCell {
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var scheduleLabel: UILabel!
-    
-}
-
-internal class scheduleTableView: UITableView {
+internal class dynamicTableView: UITableView {
     var height: CGFloat = 0
     
     override func reloadData() {

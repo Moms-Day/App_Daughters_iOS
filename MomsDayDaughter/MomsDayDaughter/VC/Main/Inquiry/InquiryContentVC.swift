@@ -11,7 +11,7 @@ import UIKit
 class InquiryContentVC: UIViewController {
     
     var id: String!
-    @IBOutlet weak var scheduleTable: scheduleTableView!
+    @IBOutlet weak var scheduleTable: dynamicTableView!
     @IBOutlet weak var dateLabel: UILabel!
     
     override func viewDidLoad() {
@@ -46,5 +46,9 @@ extension InquiryContentVC: UITableViewDelegate, UITableViewDataSource {
         cell.scheduleLabel.text = "adf"
         return cell
     }
-    
+}
+
+internal class scheduleDTO: UITableViewCell {
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var scheduleLabel: UILabel!
 }
