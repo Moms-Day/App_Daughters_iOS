@@ -49,7 +49,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etj-Z1-KkJ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="1186" translatesAutoresizingMaskIntoConstraints="NO" id="etj-Z1-KkJ">
                                 <rect key="frame" x="0.0" y="20" width="375" height="1186"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="1186" translatesAutoresizingMaskIntoConstraints="NO" id="2fn-34-S9r">
@@ -70,11 +70,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="315" placeholderIntrinsicHeight="128" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xy2-fw-p94">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="355" placeholderIntrinsicHeight="128" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xy2-fw-p94" customClass="scheduleTableView" customModule="MomsDayDaughter" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="89" width="355" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4Cb-hV-3Cb">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scheduleCell" rowHeight="50" id="4Cb-hV-3Cb" customClass="scheduleDTO" customModule="MomsDayDaughter" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="355" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Cb-hV-3Cb" id="776-EO-8cL">
@@ -107,7 +107,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아침식사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-ck-kut">
-                                                                            <rect key="frame" x="221" y="15" width="120" height="19.5"/>
+                                                                            <rect key="frame" x="221" y="15" width="120" height="20"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="120" id="qqe-38-FVv"/>
                                                                             </constraints>
@@ -136,8 +136,16 @@
                                                                 <constraint firstItem="pvm-lI-7Ef" firstAttribute="leading" secondItem="776-EO-8cL" secondAttribute="leading" id="xdA-Lf-DiB"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="scheduleLabel" destination="NLg-ck-kut" id="IUQ-sy-THM"/>
+                                                            <outlet property="timeLabel" destination="5qs-cK-6lm" id="wIU-kt-Jmi"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="6er-t5-Hg5" id="cZ2-fW-PVF"/>
+                                                    <outlet property="delegate" destination="6er-t5-Hg5" id="e2u-eO-7QD"/>
+                                                </connections>
                                             </tableView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="식단표" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDS-af-doY">
                                                 <rect key="frame" x="15" y="237" width="44.5" height="20.5"/>
@@ -327,7 +335,6 @@
                                         <constraints>
                                             <constraint firstItem="bEx-Yg-TGa" firstAttribute="top" secondItem="ILV-9Z-wVc" secondAttribute="bottom" constant="20" id="4dR-ZH-K17"/>
                                             <constraint firstItem="hXp-jB-uVT" firstAttribute="leading" secondItem="2fn-34-S9r" secondAttribute="leading" constant="10" id="5FF-kW-Keo"/>
-                                            <constraint firstItem="xy2-fw-p94" firstAttribute="top" secondItem="xTN-2z-GGE" secondAttribute="bottom" constant="8" id="6ey-IP-Ccw"/>
                                             <constraint firstItem="bvc-8C-u0l" firstAttribute="centerX" secondItem="mAD-Ij-xSy" secondAttribute="centerX" id="78f-cW-scD"/>
                                             <constraint firstAttribute="trailing" secondItem="xy2-fw-p94" secondAttribute="trailing" constant="10" id="79f-Oc-cjt"/>
                                             <constraint firstItem="e01-qV-OFG" firstAttribute="top" secondItem="XtZ-I4-Sa4" secondAttribute="bottom" constant="10" id="9fT-ZC-x0t"/>
@@ -363,9 +370,10 @@
                                             <constraint firstItem="FOK-nL-xzn" firstAttribute="centerX" secondItem="2fn-34-S9r" secondAttribute="centerX" id="oFd-lJ-vcw"/>
                                             <constraint firstItem="7ud-r0-tNV" firstAttribute="centerX" secondItem="LAY-L2-3P2" secondAttribute="centerX" id="oSW-uY-FJ2"/>
                                             <constraint firstItem="Sto-6a-PJh" firstAttribute="top" secondItem="7ud-r0-tNV" secondAttribute="bottom" constant="10" id="tEa-nC-sbE"/>
+                                            <constraint firstItem="xy2-fw-p94" firstAttribute="top" secondItem="xTN-2z-GGE" secondAttribute="bottom" constant="8" id="tNW-Fu-C55"/>
                                             <constraint firstItem="kDA-eW-Uaz" firstAttribute="centerX" secondItem="i3S-UB-nlo" secondAttribute="centerX" id="tch-DW-sKY"/>
                                             <constraint firstAttribute="trailing" secondItem="ILV-9Z-wVc" secondAttribute="trailing" constant="10" id="vIG-fi-p9q"/>
-                                            <constraint firstItem="NDS-af-doY" firstAttribute="top" secondItem="xy2-fw-p94" secondAttribute="bottom" constant="20" id="vWT-tX-2DJ"/>
+                                            <constraint firstItem="NDS-af-doY" firstAttribute="top" secondItem="xy2-fw-p94" secondAttribute="bottom" constant="20" id="wBq-au-bpW"/>
                                             <constraint firstAttribute="trailing" secondItem="hXp-jB-uVT" secondAttribute="trailing" constant="10" id="wyd-TP-LJn"/>
                                             <constraint firstItem="ILV-9Z-wVc" firstAttribute="top" secondItem="xvI-Yz-Q1p" secondAttribute="bottom" constant="10" id="xFY-b7-Hmt"/>
                                             <constraint firstItem="hXp-jB-uVT" firstAttribute="top" secondItem="bEx-Yg-TGa" secondAttribute="bottom" constant="10" id="zeQ-a6-ROl"/>
@@ -396,6 +404,7 @@
                     <size key="freeformSize" width="375" height="1250"/>
                     <connections>
                         <outlet property="dateLabel" destination="FOK-nL-xzn" id="dO5-y4-fBd"/>
+                        <outlet property="scheduleTable" destination="xy2-fw-p94" id="nZI-Ny-QUr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UQ4-Kk-r0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
