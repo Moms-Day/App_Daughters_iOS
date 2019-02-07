@@ -22,7 +22,6 @@ class WhiteButtonShape: UIButton {
     
 }
 
-
 class BottomBorderToolbar: UIToolbar {
     
     required init?(coder aDecoder: NSCoder) {
@@ -54,5 +53,25 @@ extension CALayer {
         border.backgroundColor = color.cgColor
         border.frame = CGRect(x:0, y:0, width: self.frame.size.width+100, height: width)
         self.addSublayer(border)
+    }
+}
+
+class scheduleDTO: UITableViewCell {
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var scheduleLabel: UILabel!
+    
+}
+
+internal class scheduleTableView: UITableView {
+    var height: CGFloat = 0
+    
+    override func reloadData() {
+        super.reloadData()
+        self.invalidateIntrinsicContentSize()
+        self.layoutIfNeeded()
+    }
+    
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: contentSize.width, height: height)
     }
 }
