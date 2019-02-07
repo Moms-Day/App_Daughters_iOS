@@ -13,7 +13,7 @@
         <!--채팅-->
         <scene sceneID="pgE-Go-0il">
             <objects>
-                <viewController id="G61-lN-lUU" customClass="ChatVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G61-lN-lUU" customClass="ChatListVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MJl-eg-ucS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                                                     <constraint firstAttribute="width" constant="55" id="xxf-vi-aaP"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31R-Qw-9PG">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="요양보호사님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31R-Qw-9PG">
                                                 <rect key="frame" x="80" y="7.5" width="150" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="CSq-yt-93O"/>
@@ -75,7 +75,7 @@
                                                     <constraint firstAttribute="width" constant="55" id="ouE-3c-hkv"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1h-QJ-rJ0">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="요양병원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1h-QJ-rJ0">
                                                 <rect key="frame" x="80" y="7.5" width="150" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="DOO-v0-IHi"/>
@@ -127,15 +127,21 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="채팅" id="Kxi-k3-X3N"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="careworkerChatView" destination="Jkb-0N-f0e" id="TBw-7V-Eyy"/>
+                        <outlet property="hospitalChatView" destination="wdZ-le-W5R" id="eQ4-0f-xOf"/>
+                        <segue destination="Tuu-o7-kv6" kind="show" identifier="showCareworkerChat" id="dyQ-8N-gZw"/>
+                        <segue destination="Tuu-o7-kv6" kind="show" identifier="showHospitalChat" id="bpG-Sv-Kb6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="34K-bR-Mjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-12" y="-687.7061469265368"/>
         </scene>
-        <!--View Controller-->
+        <!--ChatVC-->
         <scene sceneID="gUz-NQ-IzZ">
             <objects>
-                <viewController id="Tuu-o7-kv6" sceneMemberID="viewController">
+                <viewController id="Tuu-o7-kv6" customClass="ChatVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e8B-kB-vMO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +151,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INB-BS-gpy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="690" y="-688"/>
+            <point key="canvasLocation" x="810" y="-688"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bpG-Sv-Kb6"/>
+    </inferredMetricsTieBreakers>
 </document>
