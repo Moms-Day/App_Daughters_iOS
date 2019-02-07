@@ -44,6 +44,7 @@ extension InquiryContentVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell") as! scheduleDTO
         cell.scheduleLabel.text = "adf"
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell
     }
 }

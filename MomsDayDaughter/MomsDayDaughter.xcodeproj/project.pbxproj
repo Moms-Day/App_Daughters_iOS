@@ -21,6 +21,7 @@
 		C963C27921AAE95400309467 /* icon_app.png in Resources */ = {isa = PBXBuildFile; fileRef = C963C27821AAE95400309467 /* icon_app.png */; };
 		C97ECC2A21AFA7F7000F9218 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ECC2921AFA7F7000F9218 /* Color.swift */; };
 		C9896CF0220BD57B00EB7E29 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9896CEF220BD57B00EB7E29 /* ChatVC.swift */; };
+		C9896D1E220C200C00EB7E29 /* RankInformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9896D1D220C200C00EB7E29 /* RankInformVC.swift */; };
 		C9B998C221F6EEDF00A84CB8 /* Inquiry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */; };
 		C9B998C421F6EF4600A84CB8 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C321F6EF4600A84CB8 /* Chat.storyboard */; };
 		C9B998C621F6EF9700A84CB8 /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C521F6EF9700A84CB8 /* Rank.storyboard */; };
@@ -61,6 +62,7 @@
 		C963C27821AAE95400309467 /* icon_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_app.png; sourceTree = "<group>"; };
 		C97ECC2921AFA7F7000F9218 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C9896CEF220BD57B00EB7E29 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		C9896D1D220C200C00EB7E29 /* RankInformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankInformVC.swift; sourceTree = "<group>"; };
 		C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Inquiry.storyboard; sourceTree = "<group>"; };
 		C9B998C321F6EF4600A84CB8 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		C9B998C521F6EF9700A84CB8 /* Rank.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			children = (
 				C9CB929A21F9B88C007513C3 /* RankVC.swift */,
 				C929FB3322040602003B7A97 /* RankContentVC.swift */,
+				C9896D1D220C200C00EB7E29 /* RankInformVC.swift */,
 			);
 			path = Rank;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				C929FB3422040602003B7A97 /* RankContentVC.swift in Sources */,
 				C9CB929B21F9B88C007513C3 /* RankVC.swift in Sources */,
 				C963C25521AADB4800309467 /* LoginVC.swift in Sources */,
+				C9896D1E220C200C00EB7E29 /* RankInformVC.swift in Sources */,
 				C90F693D21AE894A000DF237 /* Shape.swift in Sources */,
 				C9CB929221F9B433007513C3 /* InquiryVC.swift in Sources */,
 				C97ECC2A21AFA7F7000F9218 /* Color.swift in Sources */,
