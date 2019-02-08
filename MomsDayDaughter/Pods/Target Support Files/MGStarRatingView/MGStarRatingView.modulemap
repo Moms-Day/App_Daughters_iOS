@@ -1,0 +1,6 @@
+framework module MGStarRatingView {
+  umbrella header "MGStarRatingView-umbrella.h"
+
+  export *
+  module * { export * }
+}

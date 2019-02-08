@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59647D95FC96EDB0365D7416 /* Pods_MomsDayDaughter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C4D58A0136E01C57642225 /* Pods_MomsDayDaughter.framework */; };
+		8F07F17FA207C0A5815B6CBB /* Pods_MomsDayDaughterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C51572A9804476E9E98722 /* Pods_MomsDayDaughterTests.framework */; };
 		C90F693D21AE894A000DF237 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90F693C21AE894A000DF237 /* Shape.swift */; };
 		C929FB322203EE99003B7A97 /* icon_pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = C929FB312203EE99003B7A97 /* icon_pencil.png */; };
 		C929FB3422040602003B7A97 /* RankContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929FB3322040602003B7A97 /* RankContentVC.swift */; };
@@ -44,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EE310C2449A7E8D26F5D93B /* Pods-MomsDayDaughter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomsDayDaughter.debug.xcconfig"; path = "Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter.debug.xcconfig"; sourceTree = "<group>"; };
+		36C4D58A0136E01C57642225 /* Pods_MomsDayDaughter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MomsDayDaughter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DEFCE977585EEAA91079BA /* Pods-MomsDayDaughterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomsDayDaughterTests.debug.xcconfig"; path = "Target Support Files/Pods-MomsDayDaughterTests/Pods-MomsDayDaughterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5169C1E1A0DB2D2BE05BFBDD /* Pods-MomsDayDaughterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomsDayDaughterTests.release.xcconfig"; path = "Target Support Files/Pods-MomsDayDaughterTests/Pods-MomsDayDaughterTests.release.xcconfig"; sourceTree = "<group>"; };
+		58FDFF6017DACD56BD3AE4EF /* Pods-MomsDayDaughter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MomsDayDaughter.release.xcconfig"; path = "Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter.release.xcconfig"; sourceTree = "<group>"; };
+		83C51572A9804476E9E98722 /* Pods_MomsDayDaughterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MomsDayDaughterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90F693C21AE894A000DF237 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		C929FB312203EE99003B7A97 /* icon_pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pencil.png; sourceTree = "<group>"; };
 		C929FB3322040602003B7A97 /* RankContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankContentVC.swift; sourceTree = "<group>"; };
@@ -79,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59647D95FC96EDB0365D7416 /* Pods_MomsDayDaughter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +95,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F07F17FA207C0A5815B6CBB /* Pods_MomsDayDaughterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F22C01F17AC24D9012EF63C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36C4D58A0136E01C57642225 /* Pods_MomsDayDaughter.framework */,
+				83C51572A9804476E9E98722 /* Pods_MomsDayDaughterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AD34962CF6B025545929852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EE310C2449A7E8D26F5D93B /* Pods-MomsDayDaughter.debug.xcconfig */,
+				58FDFF6017DACD56BD3AE4EF /* Pods-MomsDayDaughter.release.xcconfig */,
+				44DEFCE977585EEAA91079BA /* Pods-MomsDayDaughterTests.debug.xcconfig */,
+				5169C1E1A0DB2D2BE05BFBDD /* Pods-MomsDayDaughterTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C90F693A21AE8926000DF237 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +147,8 @@
 				C963C25121AADB4800309467 /* MomsDayDaughter */,
 				C963C26621AADB4A00309467 /* MomsDayDaughterTests */,
 				C963C25021AADB4800309467 /* Products */,
+				6AD34962CF6B025545929852 /* Pods */,
+				0F22C01F17AC24D9012EF63C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C963C26C21AADB4A00309467 /* Build configuration list for PBXNativeTarget "MomsDayDaughter" */;
 			buildPhases = (
+				3D56DFD536BEF0A2C198C387 /* [CP] Check Pods Manifest.lock */,
 				C963C24B21AADB4800309467 /* Sources */,
 				C963C24C21AADB4800309467 /* Frameworks */,
 				C963C24D21AADB4800309467 /* Resources */,
+				30FBF703C922C73CB25BE8BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,6 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C963C26F21AADB4A00309467 /* Build configuration list for PBXNativeTarget "MomsDayDaughterTests" */;
 			buildPhases = (
+				C53CF7F6B68049C54D224F1A /* [CP] Check Pods Manifest.lock */,
 				C963C25F21AADB4A00309467 /* Sources */,
 				C963C26021AADB4A00309467 /* Frameworks */,
 				C963C26121AADB4A00309467 /* Resources */,
@@ -324,6 +360,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30FBF703C922C73CB25BE8BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MGStarRatingView/MGStarRatingView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGStarRatingView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D56DFD536BEF0A2C198C387 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MomsDayDaughter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C53CF7F6B68049C54D224F1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MomsDayDaughterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C963C24B21AADB4800309467 /* Sources */ = {
@@ -502,6 +607,7 @@
 		};
 		C963C26D21AADB4A00309467 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE310C2449A7E8D26F5D93B /* Pods-MomsDayDaughter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,6 +626,7 @@
 		};
 		C963C26E21AADB4A00309467 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58FDFF6017DACD56BD3AE4EF /* Pods-MomsDayDaughter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +645,7 @@
 		};
 		C963C27021AADB4A00309467 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44DEFCE977585EEAA91079BA /* Pods-MomsDayDaughterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -558,6 +666,7 @@
 		};
 		C963C27121AADB4A00309467 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5169C1E1A0DB2D2BE05BFBDD /* Pods-MomsDayDaughterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
