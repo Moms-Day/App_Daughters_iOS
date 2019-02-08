@@ -28,7 +28,7 @@ class RankContentVC: UIViewController {
             rankLabel.text = "요양보호사 순위"
         }
         
-        rankTableView.height = (110*3)
+        rankTableView.height = (110*7)
         self.myRankView.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(goMyRankInform)))
     }
     
@@ -39,7 +39,7 @@ class RankContentVC: UIViewController {
 
 extension RankContentVC: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
