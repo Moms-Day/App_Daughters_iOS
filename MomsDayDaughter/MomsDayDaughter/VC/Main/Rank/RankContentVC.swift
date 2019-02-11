@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MGStarRatingView
 
 class RankContentVC: UIViewController {
 
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var rankLabel: UILabel!
     @IBOutlet weak var rankTableView: dynamicTableView!
+    @IBOutlet weak var myStarRatingView: StarRatingView!
     @IBOutlet weak var myRankView: UIView!
     
     var id:Bool! // hospital: true, careworker: false
@@ -30,6 +32,7 @@ class RankContentVC: UIViewController {
         
         rankTableView.height = (110*7)
         self.myRankView.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(goMyRankInform)))
+        myStarRatingView.justDisplay()
     }
     
     @objc func goMyRankInform(sender : UITapGestureRecognizer) {
@@ -45,6 +48,7 @@ extension RankContentVC: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rankCell") as! rankDTO
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        cell.rankStarRatingView.justDisplay()
         return cell
     }
 }
@@ -53,4 +57,5 @@ internal class rankDTO: UITableViewCell {
     @IBOutlet weak var rankImage: UIImageView!
     @IBOutlet weak var rankNameLabel: UILabel!
     @IBOutlet weak var rankLocationLabel: UILabel!
+    @IBOutlet weak var rankStarRatingView: StarRatingView!
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import MGStarRatingView
 
 class WhiteButtonShape: UIButton {
     
@@ -56,7 +57,7 @@ extension CALayer {
     }
 }
 
-internal class dynamicTableView: UITableView {
+class dynamicTableView: UITableView {
     var height: CGFloat = 0
     
     override func reloadData() {
@@ -68,4 +69,13 @@ internal class dynamicTableView: UITableView {
     override var intrinsicContentSize: CGSize {
         return CGSize(width: contentSize.width, height: height)
     }
+}
+
+extension StarRatingView {
+    func justDisplay() {
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapStarRating)))
+        self.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(tapStarRating)))
+        self.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(tapStarRating)))
+    }
+    @objc func tapStarRating() { }
 }
