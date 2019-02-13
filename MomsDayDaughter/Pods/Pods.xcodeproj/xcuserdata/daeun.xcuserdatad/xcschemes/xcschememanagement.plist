@@ -4,26 +4,40 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MGStarRatingView.xcscheme</key>
+		<key>DLRadioButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Pods-MomsDayDaughter.xcscheme</key>
+		<key>MGStarRatingView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Pods-MomsDayDaughterTests.xcscheme</key>
+		<key>Pods-MomsDayDaughter.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>Pods-MomsDayDaughterTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>UITextView+Placeholder.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

@@ -7,6 +7,8 @@ target 'MomsDayDaughter' do
 
   # Pods for MomsDayDaughter
 pod 'MGStarRatingView', '~> 0.3.0'
+pod 'DLRadioButton', '~> 1.4'
+pod 'UITextView+Placeholder'
   target 'MomsDayDaughterTests' do
     inherit! :search_paths
     # Pods for testing

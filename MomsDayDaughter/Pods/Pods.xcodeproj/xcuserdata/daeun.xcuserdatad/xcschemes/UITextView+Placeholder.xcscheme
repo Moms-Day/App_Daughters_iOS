@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6ABF2E352D52D076A1ACCE478FB4BDAA"
-               BuildableName = "Pods_MomsDayDaughter.framework"
-               BlueprintName = "Pods-MomsDayDaughter"
+               BlueprintIdentifier = "FBA3C84C983017E7A0348FE83607BF7B"
+               BuildableName = "UITextView_Placeholder.framework"
+               BlueprintName = "UITextView+Placeholder"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6ABF2E352D52D076A1ACCE478FB4BDAA"
-            BuildableName = "Pods_MomsDayDaughter.framework"
-            BlueprintName = "Pods-MomsDayDaughter"
+            BlueprintIdentifier = "FBA3C84C983017E7A0348FE83607BF7B"
+            BuildableName = "UITextView_Placeholder.framework"
+            BlueprintName = "UITextView+Placeholder"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

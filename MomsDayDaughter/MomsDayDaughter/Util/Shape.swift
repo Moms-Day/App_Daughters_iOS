@@ -23,15 +23,6 @@ class WhiteButtonShape: UIButton {
     
 }
 
-class BottomBorderToolbar: UIToolbar {
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-        self.clipsToBounds = true
-        self.layer.addBottomBorderWithColor(color: Color.GRAY.getColor(), width: 1.0)
-    }
-}
-
 class TopBorderButton: UIButton {
     
     required init?(coder aDecoder: NSCoder) {
