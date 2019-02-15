@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DDDE4B88D870D6225BAB7EECD72B490 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD2574841CAD334EFBB312E1FEF1C32 /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D6D51FC5BEDD2B7D526205596D509AD /* UITextView+Placeholder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAF841336D3DB877638224A76DDF5D /* UITextView+Placeholder-dummy.m */; };
-		3AA6FA68179FF479FADEB8924A0DF17A /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D45D50696B19B4212B9E10326B35C4 /* UITextView+Placeholder.m */; };
-		3F8F2CB4609755BE7B5353D6281BBA3C /* UITextView+Placeholder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B03AFF36640E47D05ADD97EDE936DAA /* UITextView+Placeholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52663323D1D6017F02EDEAC3DFD58051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		55B2CCDC53F0969011D2BA234E56B7E9 /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D2BCB74320983BA1EDDF6571C55377 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DDDE4B88D870D6225BAB7EECD72B490 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E74EE7E5AD39575BC02FA1931676BEA0 /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14FE2854EA763E98D718EE3397D1498B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		157B75668C2A1A78D21CD58FE17C552E /* UITextView+Placeholder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87AC3A4B041358FD3A607038C563FBB0 /* UITextView+Placeholder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FD63E67DF1A87D19768B74B044E479F /* SwiftyStarRatingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD74EF3EF9A8FE80BFB9F2A2A5ADAC4A /* SwiftyStarRatingView-dummy.m */; };
+		2005B320C131F1BDE610B64AC5FC2A9E /* UITextView+Placeholder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0742F03903673ECA9182B1A108D9AB54 /* UITextView+Placeholder-dummy.m */; };
+		2E86410A3E7AED91797CD0676C2705E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		55B2CCDC53F0969011D2BA234E56B7E9 /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E33C0B8AF81427F9CDD7C90617FD6C36 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		689AF21FE997E7FC130A0B47A6B4F5CC /* UITextView+Placeholder.h in Headers */ = {isa = PBXBuildFile; fileRef = 195B3116F17D82A1DBE8870A744DC61D /* UITextView+Placeholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72ED4F04FE3B8C6AA8D57BDE61928CA1 /* SwiftyStarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A7394F9CA0FE39D0F62B23A524EF93 /* SwiftyStarRatingView.swift */; };
+		7AEF6E31FF6D93D3ECFCBEBA02427B53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
 		7F8D77071F27B5207B9D55A43685C2D2 /* Pods-MomsDayDaughterTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1CCF28BDFC48A87817146416E01185 /* Pods-MomsDayDaughterTests-dummy.m */; };
-		850791925BB3167800AD717B3A9832B6 /* Pods-MomsDayDaughter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75BA7DD4330D69D1AABD4FABA7E978 /* Pods-MomsDayDaughter-dummy.m */; };
+		8856377DB5774F6D46D829AEF326FC9D /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C04888B880B682FDF31098BB476007A /* UITextView+Placeholder.m */; };
 		8D3A3FE88FCE61A2F3227823222020C4 /* Pods-MomsDayDaughterTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B4D06EB6AD590C43AFFF5008D84EE6 /* Pods-MomsDayDaughterTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F001DE59086B5B28FD44DA12F4B9385 /* MGStarRatingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C3D5158AFD88C53ABBF1159CE813B /* MGStarRatingView-dummy.m */; };
-		9913A65FAA95C2684B9BC986C4E702C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		918EF688CFA5EBEEED3EBA1444F7022F /* Pods-MomsDayDaughter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75BA7DD4330D69D1AABD4FABA7E978 /* Pods-MomsDayDaughter-dummy.m */; };
 		9A93B98D77F359E3C27E8020C4371A01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		9C31B6052079FDD44BD3FEFC7D34277A /* UITextView+Placeholder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B93C4A53BF4641C3E187FD67C03CFC4E /* UITextView+Placeholder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B233114CC4171DE7B296CD23DF78E26A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
-		BDBCFC743FB9943826F18A175C83DF08 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AB8440A7814BFD60B8869DD934B517 /* DLRadioButton.m */; };
-		C97AA445EC5AF9A0ABEFBF3B7A6998C9 /* MGStarRatingView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7BE939F6B5E89DC5D1B846172452C31 /* MGStarRatingView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDBCFC743FB9943826F18A175C83DF08 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D71D4EC001D3129C5DD104558F69737C /* DLRadioButton.m */; };
+		D526B62CC69376B5AE6389295BE570EE /* SwiftyStarRatingView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A3CF40AA44C155F449BA13599AE3A45 /* SwiftyStarRatingView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7215538B7B0463CE309EEE599F3D81D /* Pods-MomsDayDaughter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1378455BEC97C0A3E0933408F47EDBAA /* Pods-MomsDayDaughter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E274AD58903EC1747DD90FC12BAF853F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		E8D0DFC5E26A8EA0D19CE8C2766D39DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		EC14261DF5A472101315A8C3A8032AA5 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD55B9FBE6531134BB7B404C65334FE /* StarRatingView.swift */; };
-		FED928FEC82C7BF9E9EFC1CECE84E897 /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C98AFEC378DF615C5420BCA6C5A32FF7 /* DLRadioButton-dummy.m */; };
-		FFD495C65AC8E2236F8F608A16305D41 /* Pods-MomsDayDaughter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1378455BEC97C0A3E0933408F47EDBAA /* Pods-MomsDayDaughter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1A5E4D61C04964D80F9A41F693328A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		FED928FEC82C7BF9E9EFC1CECE84E897 /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DFFC9BEDF4CA72162FD0D36A1256B0 /* DLRadioButton-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,84 +35,93 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6ABF2E352D52D076A1ACCE478FB4BDAA;
+			remoteGlobalIDString = 504B6AB8FC17A2839801B19EFF151EC6;
 			remoteInfo = "Pods-MomsDayDaughter";
 		};
-		2DD187DFEA54D1B16326183B0894F7DA /* PBXContainerItemProxy */ = {
+		5877ECC331FACAC2D6705F47088A38C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3187B53FBD269B47EC46CE6994123A39;
+			remoteInfo = SwiftyStarRatingView;
+		};
+		977800CA4CB9E65AB3E49DFB0CA20B90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 46BD0675E3AE6FB8C284CB79F1013052;
 			remoteInfo = DLRadioButton;
 		};
-		90F0D651C61830ADE4C61C1CB75B2FE2 /* PBXContainerItemProxy */ = {
+		AC02D13C1D2B11F22E3AB452632ECAB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 74E9B30F565AFF2640A0AC406410D9E5;
-			remoteInfo = MGStarRatingView;
-		};
-		B8DFFB37A90E23F416F5563AA63F1847 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FBA3C84C983017E7A0348FE83607BF7B;
+			remoteGlobalIDString = 6756D7BC91FFC151AF1FFF706C090E93;
 			remoteInfo = "UITextView+Placeholder";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00CFA1D97260BB77E365BF7E7AE375F6 /* DLRadioButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DLRadioButton-Info.plist"; sourceTree = "<group>"; };
-		02C8004B32230FB41C372BD441C560E3 /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
-		0B03AFF36640E47D05ADD97EDE936DAA /* UITextView+Placeholder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+Placeholder.h"; path = "Sources/UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		0742F03903673ECA9182B1A108D9AB54 /* UITextView+Placeholder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder-dummy.m"; sourceTree = "<group>"; };
 		1378455BEC97C0A3E0933408F47EDBAA /* Pods-MomsDayDaughter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MomsDayDaughter-umbrella.h"; sourceTree = "<group>"; };
 		14BC9E47225C65EB3E7A5B0867826948 /* Pods-MomsDayDaughter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MomsDayDaughter.modulemap"; sourceTree = "<group>"; };
-		1627F05C6CDFD0669ED674A5EAF5E999 /* UITextView_Placeholder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UITextView_Placeholder.framework; path = "UITextView+Placeholder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D266E569BE09CBCDC50F20B2E9BE33 /* Pods-MomsDayDaughter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MomsDayDaughter.release.xcconfig"; sourceTree = "<group>"; };
+		195B3116F17D82A1DBE8870A744DC61D /* UITextView+Placeholder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+Placeholder.h"; path = "Sources/UITextView+Placeholder.h"; sourceTree = "<group>"; };
 		1A24F2BAADF45308705FCAC18811B7D7 /* Pods-MomsDayDaughterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MomsDayDaughterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B75BA7DD4330D69D1AABD4FABA7E978 /* Pods-MomsDayDaughter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MomsDayDaughter-dummy.m"; sourceTree = "<group>"; };
+		1C04888B880B682FDF31098BB476007A /* UITextView+Placeholder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+Placeholder.m"; path = "Sources/UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		1F78AE00BA87CFAC614155B463A50D76 /* SwiftyStarRatingView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyStarRatingView.modulemap; sourceTree = "<group>"; };
 		205A2F08CF63415FAB548A1F42D1BE3E /* Pods-MomsDayDaughter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MomsDayDaughter.debug.xcconfig"; sourceTree = "<group>"; };
-		24D98CD12F93289F9DB02CF78F0671A1 /* UITextView+Placeholder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder-prefix.pch"; sourceTree = "<group>"; };
-		2F0962CB6ACC33144F724B8D75EBCA16 /* Pods_MomsDayDaughterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MomsDayDaughterTests.framework; path = "Pods-MomsDayDaughterTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32D2BCB74320983BA1EDDF6571C55377 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
+		32A35FF2F8B8956004204C96C9300500 /* UITextView+Placeholder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder-prefix.pch"; sourceTree = "<group>"; };
+		3A3CF40AA44C155F449BA13599AE3A45 /* SwiftyStarRatingView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStarRatingView-umbrella.h"; sourceTree = "<group>"; };
+		3E5A8179A0B63F65A3FE1C773981A1FF /* SwiftyStarRatingView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyStarRatingView.xcconfig; sourceTree = "<group>"; };
 		3F44DBAD70391B78F7F15F954620E043 /* Pods-MomsDayDaughter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MomsDayDaughter-acknowledgements.markdown"; sourceTree = "<group>"; };
 		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4DEAF841336D3DB877638224A76DDF5D /* UITextView+Placeholder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder-dummy.m"; sourceTree = "<group>"; };
-		5770ABDDE39569F4777F323A722C41D7 /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
-		61AB8440A7814BFD60B8869DD934B517 /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
-		6C6156C15279772C08D9DC8823314F0E /* Pods_MomsDayDaughter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MomsDayDaughter.framework; path = "Pods-MomsDayDaughter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		417DBDF945E3052174198E00B8101DF3 /* DLRadioButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DLRadioButton-Info.plist"; sourceTree = "<group>"; };
+		54ECAFD31BF7E0DEC0D85FCA3382E21C /* Pods_MomsDayDaughter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MomsDayDaughter.framework; path = "Pods-MomsDayDaughter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0957431DF00E56F5F8CBF84A76D17B /* UITextView_Placeholder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UITextView_Placeholder.framework; path = "UITextView+Placeholder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C03572366F39A32C68C3CF433B11341 /* UITextView+Placeholder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UITextView+Placeholder-Info.plist"; sourceTree = "<group>"; };
 		6DA4C0B84E4F077C39C5B59DFEF0AC48 /* Pods-MomsDayDaughterTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MomsDayDaughterTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		74B1E143D1954E2D05A129A57FC1EBF4 /* UITextView+Placeholder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UITextView+Placeholder.modulemap"; sourceTree = "<group>"; };
-		7B1323D13C2B9208A588143F17D9B804 /* MGStarRatingView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MGStarRatingView.modulemap; sourceTree = "<group>"; };
-		80BB643BAFEB7D83327E0BE3A06E2A65 /* MGStarRatingView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGStarRatingView.xcconfig; sourceTree = "<group>"; };
-		87D45D50696B19B4212B9E10326B35C4 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+Placeholder.m"; path = "Sources/UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		87AC3A4B041358FD3A607038C563FBB0 /* UITextView+Placeholder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder-umbrella.h"; sourceTree = "<group>"; };
 		8B9E1BB18741C36644E22336BDE96212 /* Pods-MomsDayDaughterTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MomsDayDaughterTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8D0C3D5158AFD88C53ABBF1159CE813B /* MGStarRatingView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGStarRatingView-dummy.m"; sourceTree = "<group>"; };
 		8D8790BF60CB823A4987BFA7DCB30C6D /* Pods-MomsDayDaughter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MomsDayDaughter-Info.plist"; sourceTree = "<group>"; };
+		8EC83B07039E4F96357AA23DE04B6130 /* UITextView+Placeholder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITextView+Placeholder.xcconfig"; sourceTree = "<group>"; };
 		9425C68D5090C6CFF6908240533A5716 /* Pods-MomsDayDaughterTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MomsDayDaughterTests-Info.plist"; sourceTree = "<group>"; };
-		969B290FA71907DBDE6F4F4141DCA27B /* MGStarRatingView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MGStarRatingView-Info.plist"; sourceTree = "<group>"; };
-		98B0975B99D32BDB644FBF0CAD04584F /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B9365155E3E1C1B9E91B374C5CAE8A9 /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
+		96DD1EF94478E88AA148333FB430AC0B /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4092BD96E296B9B19C81BFD3AFF9696 /* Pods-MomsDayDaughter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MomsDayDaughter-frameworks.sh"; sourceTree = "<group>"; };
-		A7BE939F6B5E89DC5D1B846172452C31 /* MGStarRatingView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGStarRatingView-umbrella.h"; sourceTree = "<group>"; };
+		A6D5FC6669F7D89128F2A9C8BA78F4AC /* UITextView+Placeholder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UITextView+Placeholder.modulemap"; sourceTree = "<group>"; };
+		AA7762F075C01A8D1D529914AAE0E7C3 /* Pods_MomsDayDaughterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MomsDayDaughterTests.framework; path = "Pods-MomsDayDaughterTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1CCF28BDFC48A87817146416E01185 /* Pods-MomsDayDaughterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MomsDayDaughterTests-dummy.m"; sourceTree = "<group>"; };
-		ABD2574841CAD334EFBB312E1FEF1C32 /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
-		B93C4A53BF4641C3E187FD67C03CFC4E /* UITextView+Placeholder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder-umbrella.h"; sourceTree = "<group>"; };
-		C98AFEC378DF615C5420BCA6C5A32FF7 /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
+		AD74EF3EF9A8FE80BFB9F2A2A5ADAC4A /* SwiftyStarRatingView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyStarRatingView-dummy.m"; sourceTree = "<group>"; };
+		B1AFA22662EFCA6CCD27165B7EB37F23 /* SwiftyStarRatingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyStarRatingView.framework; path = SwiftyStarRatingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4DFFC9BEDF4CA72162FD0D36A1256B0 /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
 		CCF64AEE4CAF20A3703728DE08419D6B /* Pods-MomsDayDaughterTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MomsDayDaughterTests.modulemap"; sourceTree = "<group>"; };
 		D5EFD6E99993AB6849BB8776C51DEA34 /* Pods-MomsDayDaughterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MomsDayDaughterTests.release.xcconfig"; sourceTree = "<group>"; };
-		DCD55B9FBE6531134BB7B404C65334FE /* StarRatingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarRatingView.swift; path = Sources/StarRatingView.swift; sourceTree = "<group>"; };
-		E4B5F0066BEF2098399999AE9F470843 /* MGStarRatingView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGStarRatingView-prefix.pch"; sourceTree = "<group>"; };
+		D71D4EC001D3129C5DD104558F69737C /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
+		E33C0B8AF81427F9CDD7C90617FD6C36 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
+		E4A7394F9CA0FE39D0F62B23A524EF93 /* SwiftyStarRatingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyStarRatingView.swift; path = Source/SwiftyStarRatingView.swift; sourceTree = "<group>"; };
 		E679FCCB9DBE5D9FBDFE500E899D804D /* Pods-MomsDayDaughter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MomsDayDaughter-acknowledgements.plist"; sourceTree = "<group>"; };
-		E819073C7B7C2723A1C07A3D0C701DBC /* MGStarRatingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MGStarRatingView.framework; path = MGStarRatingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74EE7E5AD39575BC02FA1931676BEA0 /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
 		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		ED976D9985F1AFD9FA1819B8B057FA74 /* UITextView+Placeholder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UITextView+Placeholder-Info.plist"; sourceTree = "<group>"; };
+		EF06C5F6CC3C9BDC26B2B2E3C74AD64F /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
+		F7ABB851FF66BFA6F2F688C080DBC313 /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
 		F7B4D06EB6AD590C43AFFF5008D84EE6 /* Pods-MomsDayDaughterTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MomsDayDaughterTests-umbrella.h"; sourceTree = "<group>"; };
-		FE59DD5A5A3CA0C2A2EFECBC79FC3B35 /* UITextView+Placeholder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITextView+Placeholder.xcconfig"; sourceTree = "<group>"; };
+		F7C5FF3078566576636EA551E392707B /* SwiftyStarRatingView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStarRatingView-prefix.pch"; sourceTree = "<group>"; };
+		FC0B2DDFE94041960DE167911C85F407 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFE0D7791578B8F8DC441979EEC6801 /* SwiftyStarRatingView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyStarRatingView-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C73B6FF0D7C86E12F31B61CE6E785EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E86410A3E7AED91797CD0676C2705E3 /* Foundation.framework in Frameworks */,
+				7AEF6E31FF6D93D3ECFCBEBA02427B53 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		161F046DB137776CBD31647A9E2018F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,11 +130,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F3015FC6B1CA740CE90583B089D2753 /* Frameworks */ = {
+		47996899170AC93B73AE551B73D6E995 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9913A65FAA95C2684B9BC986C4E702C2 /* Foundation.framework in Frameworks */,
+				14FE2854EA763E98D718EE3397D1498B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BFFC44F3A3DB678039B0356242CAACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A5E4D61C04964D80F9A41F693328A5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,26 +154,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAAA20FBA4D1517E9CC710193BE8AA3C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52663323D1D6017F02EDEAC3DFD58051 /* Foundation.framework in Frameworks */,
-				B233114CC4171DE7B296CD23DF78E26A /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4A720C006495EA24951F474DA19A7CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8D0DFC5E26A8EA0D19CE8C2766D39DE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01CD8C50D2E3C3AF172FF72F6B9C71F2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F78AE00BA87CFAC614155B463A50D76 /* SwiftyStarRatingView.modulemap */,
+				3E5A8179A0B63F65A3FE1C773981A1FF /* SwiftyStarRatingView.xcconfig */,
+				AD74EF3EF9A8FE80BFB9F2A2A5ADAC4A /* SwiftyStarRatingView-dummy.m */,
+				FFFE0D7791578B8F8DC441979EEC6801 /* SwiftyStarRatingView-Info.plist */,
+				F7C5FF3078566576636EA551E392707B /* SwiftyStarRatingView-prefix.pch */,
+				3A3CF40AA44C155F449BA13599AE3A45 /* SwiftyStarRatingView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyStarRatingView";
+			sourceTree = "<group>";
+		};
 		13C6F4DEB493B9CC65E319E224FD7349 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,72 +188,76 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1E5128DA3C5F2F3EBA6F6416867F3850 /* Pods */ = {
+		1E0DBA0F1DB7E2254CE1EDF73CF41377 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9EF0ADCC3E6AE4DCD30A41C1F4A097A6 /* DLRadioButton */,
-				923341E2F7E83C2211D0C136CC14828C /* MGStarRatingView */,
-				9D0D251E88F2F5F904D756E476FF500B /* UITextView+Placeholder */,
+				FC0B2DDFE94041960DE167911C85F407 /* DLRadioButton.framework */,
+				54ECAFD31BF7E0DEC0D85FCA3382E21C /* Pods_MomsDayDaughter.framework */,
+				AA7762F075C01A8D1D529914AAE0E7C3 /* Pods_MomsDayDaughterTests.framework */,
+				B1AFA22662EFCA6CCD27165B7EB37F23 /* SwiftyStarRatingView.framework */,
+				5A0957431DF00E56F5F8CBF84A76D17B /* UITextView_Placeholder.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		26B9A7F4EAD4E96A2134BE5EDC29D652 /* Support Files */ = {
+		384A6E86FDD1A76F81E5F6DD7090AE08 /* SwiftyStarRatingView */ = {
 			isa = PBXGroup;
 			children = (
-				74B1E143D1954E2D05A129A57FC1EBF4 /* UITextView+Placeholder.modulemap */,
-				FE59DD5A5A3CA0C2A2EFECBC79FC3B35 /* UITextView+Placeholder.xcconfig */,
-				4DEAF841336D3DB877638224A76DDF5D /* UITextView+Placeholder-dummy.m */,
-				ED976D9985F1AFD9FA1819B8B057FA74 /* UITextView+Placeholder-Info.plist */,
-				24D98CD12F93289F9DB02CF78F0671A1 /* UITextView+Placeholder-prefix.pch */,
-				B93C4A53BF4641C3E187FD67C03CFC4E /* UITextView+Placeholder-umbrella.h */,
+				E4A7394F9CA0FE39D0F62B23A524EF93 /* SwiftyStarRatingView.swift */,
+				01CD8C50D2E3C3AF172FF72F6B9C71F2 /* Support Files */,
+			);
+			name = SwiftyStarRatingView;
+			path = SwiftyStarRatingView;
+			sourceTree = "<group>";
+		};
+		493B1C7B3A6FA840211DED7736D2952E /* DLRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				E74EE7E5AD39575BC02FA1931676BEA0 /* DLRadioButton.h */,
+				D71D4EC001D3129C5DD104558F69737C /* DLRadioButton.m */,
+				86B305E2AE0B96D82CDD11B5D9C1ED72 /* Support Files */,
+			);
+			name = DLRadioButton;
+			path = DLRadioButton;
+			sourceTree = "<group>";
+		};
+		6CFF91F72D08C816879DBB1E0A0B987C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6D5FC6669F7D89128F2A9C8BA78F4AC /* UITextView+Placeholder.modulemap */,
+				8EC83B07039E4F96357AA23DE04B6130 /* UITextView+Placeholder.xcconfig */,
+				0742F03903673ECA9182B1A108D9AB54 /* UITextView+Placeholder-dummy.m */,
+				5C03572366F39A32C68C3CF433B11341 /* UITextView+Placeholder-Info.plist */,
+				32A35FF2F8B8956004204C96C9300500 /* UITextView+Placeholder-prefix.pch */,
+				87AC3A4B041358FD3A607038C563FBB0 /* UITextView+Placeholder-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/UITextView+Placeholder";
 			sourceTree = "<group>";
 		};
-		4AB697286FC4CBB401BB8A788D8DB7C1 /* Products */ = {
+		86B305E2AE0B96D82CDD11B5D9C1ED72 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				98B0975B99D32BDB644FBF0CAD04584F /* DLRadioButton.framework */,
-				E819073C7B7C2723A1C07A3D0C701DBC /* MGStarRatingView.framework */,
-				6C6156C15279772C08D9DC8823314F0E /* Pods_MomsDayDaughter.framework */,
-				2F0962CB6ACC33144F724B8D75EBCA16 /* Pods_MomsDayDaughterTests.framework */,
-				1627F05C6CDFD0669ED674A5EAF5E999 /* UITextView_Placeholder.framework */,
+				96DD1EF94478E88AA148333FB430AC0B /* DLRadioButton.modulemap */,
+				F7ABB851FF66BFA6F2F688C080DBC313 /* DLRadioButton.xcconfig */,
+				B4DFFC9BEDF4CA72162FD0D36A1256B0 /* DLRadioButton-dummy.m */,
+				417DBDF945E3052174198E00B8101DF3 /* DLRadioButton-Info.plist */,
+				EF06C5F6CC3C9BDC26B2B2E3C74AD64F /* DLRadioButton-prefix.pch */,
+				E33C0B8AF81427F9CDD7C90617FD6C36 /* DLRadioButton-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/DLRadioButton";
 			sourceTree = "<group>";
 		};
-		923341E2F7E83C2211D0C136CC14828C /* MGStarRatingView */ = {
+		AD8812A7D489C2F99FC1A16F1F69C9F7 /* UITextView+Placeholder */ = {
 			isa = PBXGroup;
 			children = (
-				DCD55B9FBE6531134BB7B404C65334FE /* StarRatingView.swift */,
-				F875A66241466212111E9BC35D8C3E65 /* Support Files */,
-			);
-			name = MGStarRatingView;
-			path = MGStarRatingView;
-			sourceTree = "<group>";
-		};
-		9D0D251E88F2F5F904D756E476FF500B /* UITextView+Placeholder */ = {
-			isa = PBXGroup;
-			children = (
-				0B03AFF36640E47D05ADD97EDE936DAA /* UITextView+Placeholder.h */,
-				87D45D50696B19B4212B9E10326B35C4 /* UITextView+Placeholder.m */,
-				26B9A7F4EAD4E96A2134BE5EDC29D652 /* Support Files */,
+				195B3116F17D82A1DBE8870A744DC61D /* UITextView+Placeholder.h */,
+				1C04888B880B682FDF31098BB476007A /* UITextView+Placeholder.m */,
+				6CFF91F72D08C816879DBB1E0A0B987C /* Support Files */,
 			);
 			name = "UITextView+Placeholder";
 			path = "UITextView+Placeholder";
-			sourceTree = "<group>";
-		};
-		9EF0ADCC3E6AE4DCD30A41C1F4A097A6 /* DLRadioButton */ = {
-			isa = PBXGroup;
-			children = (
-				ABD2574841CAD334EFBB312E1FEF1C32 /* DLRadioButton.h */,
-				61AB8440A7814BFD60B8869DD934B517 /* DLRadioButton.m */,
-				ED72159218CD2ADD4EAEBFD77AB4A360 /* Support Files */,
-			);
-			name = DLRadioButton;
-			path = DLRadioButton;
 			sourceTree = "<group>";
 		};
 		CCB734F0C21BEEE1071A3414194A3097 /* Pods-MomsDayDaughter */ = {
@@ -264,10 +282,20 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				1E5128DA3C5F2F3EBA6F6416867F3850 /* Pods */,
-				4AB697286FC4CBB401BB8A788D8DB7C1 /* Products */,
+				DD598F3FCCFF59A81999048B39ECE07C /* Pods */,
+				1E0DBA0F1DB7E2254CE1EDF73CF41377 /* Products */,
 				13C6F4DEB493B9CC65E319E224FD7349 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		DD598F3FCCFF59A81999048B39ECE07C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				493B1C7B3A6FA840211DED7736D2952E /* DLRadioButton */,
+				384A6E86FDD1A76F81E5F6DD7090AE08 /* SwiftyStarRatingView */,
+				AD8812A7D489C2F99FC1A16F1F69C9F7 /* UITextView+Placeholder */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
@@ -277,20 +305,6 @@
 				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		ED72159218CD2ADD4EAEBFD77AB4A360 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5770ABDDE39569F4777F323A722C41D7 /* DLRadioButton.modulemap */,
-				02C8004B32230FB41C372BD441C560E3 /* DLRadioButton.xcconfig */,
-				C98AFEC378DF615C5420BCA6C5A32FF7 /* DLRadioButton-dummy.m */,
-				00CFA1D97260BB77E365BF7E7AE375F6 /* DLRadioButton-Info.plist */,
-				9B9365155E3E1C1B9E91B374C5CAE8A9 /* DLRadioButton-prefix.pch */,
-				32D2BCB74320983BA1EDDF6571C55377 /* DLRadioButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DLRadioButton";
 			sourceTree = "<group>";
 		};
 		F7B9C36491E9720B3A644617EC749D10 /* Pods-MomsDayDaughterTests */ = {
@@ -309,45 +323,14 @@
 			path = "Target Support Files/Pods-MomsDayDaughterTests";
 			sourceTree = "<group>";
 		};
-		F875A66241466212111E9BC35D8C3E65 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7B1323D13C2B9208A588143F17D9B804 /* MGStarRatingView.modulemap */,
-				80BB643BAFEB7D83327E0BE3A06E2A65 /* MGStarRatingView.xcconfig */,
-				8D0C3D5158AFD88C53ABBF1159CE813B /* MGStarRatingView-dummy.m */,
-				969B290FA71907DBDE6F4F4141DCA27B /* MGStarRatingView-Info.plist */,
-				E4B5F0066BEF2098399999AE9F470843 /* MGStarRatingView-prefix.pch */,
-				A7BE939F6B5E89DC5D1B846172452C31 /* MGStarRatingView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MGStarRatingView";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		36E66FA7802E53431A8D0C0A33C1FE06 /* Headers */ = {
+		2B05326F7D8EC93233F033AD9BA2B035 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97AA445EC5AF9A0ABEFBF3B7A6998C9 /* MGStarRatingView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4510A766186B62697F7EEA13BAA3D54A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C31B6052079FDD44BD3FEFC7D34277A /* UITextView+Placeholder-umbrella.h in Headers */,
-				3F8F2CB4609755BE7B5353D6281BBA3C /* UITextView+Placeholder.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		710CF31E33B7DE22DD7B544188E411BA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFD495C65AC8E2236F8F608A16305D41 /* Pods-MomsDayDaughter-umbrella.h in Headers */,
+				D7215538B7B0463CE309EEE599F3D81D /* Pods-MomsDayDaughter-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,9 +351,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C2983F45524980773F6EACFAB4DFBFA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157B75668C2A1A78D21CD58FE17C552E /* UITextView+Placeholder-umbrella.h in Headers */,
+				689AF21FE997E7FC130A0B47A6B4F5CC /* UITextView+Placeholder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC8F63A272C24CE5AC0BF1B306106B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D526B62CC69376B5AE6389295BE570EE /* SwiftyStarRatingView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3187B53FBD269B47EC46CE6994123A39 /* SwiftyStarRatingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3414994843542BCEFC842AEDF9C70FAE /* Build configuration list for PBXNativeTarget "SwiftyStarRatingView" */;
+			buildPhases = (
+				FEC8F63A272C24CE5AC0BF1B306106B3 /* Headers */,
+				2D735FEE16148EF3620877182CF837D0 /* Sources */,
+				9BFFC44F3A3DB678039B0356242CAACB /* Frameworks */,
+				7457C13315716F7A699FEA7ACFBBCA69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyStarRatingView;
+			productName = SwiftyStarRatingView;
+			productReference = B1AFA22662EFCA6CCD27165B7EB37F23 /* SwiftyStarRatingView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		46BD0675E3AE6FB8C284CB79F1013052 /* DLRadioButton */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1ECCCD994A7BA390D8D0E83D7A01751D /* Build configuration list for PBXNativeTarget "DLRadioButton" */;
@@ -386,46 +404,46 @@
 			);
 			name = DLRadioButton;
 			productName = DLRadioButton;
-			productReference = 98B0975B99D32BDB644FBF0CAD04584F /* DLRadioButton.framework */;
+			productReference = FC0B2DDFE94041960DE167911C85F407 /* DLRadioButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6ABF2E352D52D076A1ACCE478FB4BDAA /* Pods-MomsDayDaughter */ = {
+		504B6AB8FC17A2839801B19EFF151EC6 /* Pods-MomsDayDaughter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3C407C81EFFDBF9BE854A20D90338F0 /* Build configuration list for PBXNativeTarget "Pods-MomsDayDaughter" */;
+			buildConfigurationList = B9AAC2393F0162DFE94BE3663B8D79C9 /* Build configuration list for PBXNativeTarget "Pods-MomsDayDaughter" */;
 			buildPhases = (
-				710CF31E33B7DE22DD7B544188E411BA /* Headers */,
-				504628B163B67477478EDF10EC4D2EE3 /* Sources */,
-				C4A720C006495EA24951F474DA19A7CE /* Frameworks */,
-				B654EEBFED5653A4FDE9A3B41DAD61C2 /* Resources */,
+				2B05326F7D8EC93233F033AD9BA2B035 /* Headers */,
+				30B3D23E41A436E24E34626F3D7B952C /* Sources */,
+				47996899170AC93B73AE551B73D6E995 /* Frameworks */,
+				77710937C3B25ACE77CC36802D394876 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BFD3142CE27605B27479A7539FEBA08B /* PBXTargetDependency */,
-				83466C155366B5DD4B8144D574AE6AF4 /* PBXTargetDependency */,
-				4B2CFA86B7FDB7600489FB853C09AF2C /* PBXTargetDependency */,
+				F3D2AF422A384C12C804A2D8D5C48290 /* PBXTargetDependency */,
+				1B67BEF8EB438BFFFE78662B422B3EEB /* PBXTargetDependency */,
+				D9C02C53708827DBBE10679AA596059E /* PBXTargetDependency */,
 			);
 			name = "Pods-MomsDayDaughter";
 			productName = "Pods-MomsDayDaughter";
-			productReference = 6C6156C15279772C08D9DC8823314F0E /* Pods_MomsDayDaughter.framework */;
+			productReference = 54ECAFD31BF7E0DEC0D85FCA3382E21C /* Pods_MomsDayDaughter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		74E9B30F565AFF2640A0AC406410D9E5 /* MGStarRatingView */ = {
+		6756D7BC91FFC151AF1FFF706C090E93 /* UITextView+Placeholder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E329BE4845E2BDD82B537F584D16E59 /* Build configuration list for PBXNativeTarget "MGStarRatingView" */;
+			buildConfigurationList = FB96363FD71040A35DFC80F67DE81E3A /* Build configuration list for PBXNativeTarget "UITextView+Placeholder" */;
 			buildPhases = (
-				36E66FA7802E53431A8D0C0A33C1FE06 /* Headers */,
-				EC45E8C9A9F65893B571874297931226 /* Sources */,
-				7F3015FC6B1CA740CE90583B089D2753 /* Frameworks */,
-				1CD1E2BC39924A2EEC670CC30F4E26B8 /* Resources */,
+				C2983F45524980773F6EACFAB4DFBFA4 /* Headers */,
+				A3AD16C93C74DC091DA67EE6131A32FC /* Sources */,
+				0C73B6FF0D7C86E12F31B61CE6E785EC /* Frameworks */,
+				AFB8E3C58F852062F4B4D4D6CCD9A4CC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MGStarRatingView;
-			productName = MGStarRatingView;
-			productReference = E819073C7B7C2723A1C07A3D0C701DBC /* MGStarRatingView.framework */;
+			name = "UITextView+Placeholder";
+			productName = "UITextView+Placeholder";
+			productReference = 5A0957431DF00E56F5F8CBF84A76D17B /* UITextView_Placeholder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C229921BF9E52F11FB109B5B2367D315 /* Pods-MomsDayDaughterTests */ = {
@@ -444,25 +462,7 @@
 			);
 			name = "Pods-MomsDayDaughterTests";
 			productName = "Pods-MomsDayDaughterTests";
-			productReference = 2F0962CB6ACC33144F724B8D75EBCA16 /* Pods_MomsDayDaughterTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FBA3C84C983017E7A0348FE83607BF7B /* UITextView+Placeholder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB3A91493A841F11AAFD5EE7BF2F5AB3 /* Build configuration list for PBXNativeTarget "UITextView+Placeholder" */;
-			buildPhases = (
-				4510A766186B62697F7EEA13BAA3D54A /* Headers */,
-				AC2845F0B2CC251D708FC4534F63BD5E /* Sources */,
-				BAAA20FBA4D1517E9CC710193BE8AA3C /* Frameworks */,
-				81D9F1C568695DFD1CF19A78C4AC74F8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "UITextView+Placeholder";
-			productName = "UITextView+Placeholder";
-			productReference = 1627F05C6CDFD0669ED674A5EAF5E999 /* UITextView_Placeholder.framework */;
+			productReference = AA7762F075C01A8D1D529914AAE0E7C3 /* Pods_MomsDayDaughterTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -482,27 +482,20 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 4AB697286FC4CBB401BB8A788D8DB7C1 /* Products */;
+			productRefGroup = 1E0DBA0F1DB7E2254CE1EDF73CF41377 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				46BD0675E3AE6FB8C284CB79F1013052 /* DLRadioButton */,
-				74E9B30F565AFF2640A0AC406410D9E5 /* MGStarRatingView */,
-				6ABF2E352D52D076A1ACCE478FB4BDAA /* Pods-MomsDayDaughter */,
+				504B6AB8FC17A2839801B19EFF151EC6 /* Pods-MomsDayDaughter */,
 				C229921BF9E52F11FB109B5B2367D315 /* Pods-MomsDayDaughterTests */,
-				FBA3C84C983017E7A0348FE83607BF7B /* UITextView+Placeholder */,
+				3187B53FBD269B47EC46CE6994123A39 /* SwiftyStarRatingView */,
+				6756D7BC91FFC151AF1FFF706C090E93 /* UITextView+Placeholder */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1CD1E2BC39924A2EEC670CC30F4E26B8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		21DB0C0CA3815E9F41D21BAA21744854 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -517,14 +510,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81D9F1C568695DFD1CF19A78C4AC74F8 /* Resources */ = {
+		7457C13315716F7A699FEA7ACFBBCA69 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B654EEBFED5653A4FDE9A3B41DAD61C2 /* Resources */ = {
+		77710937C3B25ACE77CC36802D394876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFB8E3C58F852062F4B4D4D6CCD9A4CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -534,11 +534,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		504628B163B67477478EDF10EC4D2EE3 /* Sources */ = {
+		2D735FEE16148EF3620877182CF837D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				850791925BB3167800AD717B3A9832B6 /* Pods-MomsDayDaughter-dummy.m in Sources */,
+				1FD63E67DF1A87D19768B74B044E479F /* SwiftyStarRatingView-dummy.m in Sources */,
+				72ED4F04FE3B8C6AA8D57BDE61928CA1 /* SwiftyStarRatingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B3D23E41A436E24E34626F3D7B952C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				918EF688CFA5EBEEED3EBA1444F7022F /* Pods-MomsDayDaughter-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,57 +568,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC2845F0B2CC251D708FC4534F63BD5E /* Sources */ = {
+		A3AD16C93C74DC091DA67EE6131A32FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D6D51FC5BEDD2B7D526205596D509AD /* UITextView+Placeholder-dummy.m in Sources */,
-				3AA6FA68179FF479FADEB8924A0DF17A /* UITextView+Placeholder.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC45E8C9A9F65893B571874297931226 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8F001DE59086B5B28FD44DA12F4B9385 /* MGStarRatingView-dummy.m in Sources */,
-				EC14261DF5A472101315A8C3A8032AA5 /* StarRatingView.swift in Sources */,
+				2005B320C131F1BDE610B64AC5FC2A9E /* UITextView+Placeholder-dummy.m in Sources */,
+				8856377DB5774F6D46D829AEF326FC9D /* UITextView+Placeholder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4B2CFA86B7FDB7600489FB853C09AF2C /* PBXTargetDependency */ = {
+		1B67BEF8EB438BFFFE78662B422B3EEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "UITextView+Placeholder";
-			target = FBA3C84C983017E7A0348FE83607BF7B /* UITextView+Placeholder */;
-			targetProxy = B8DFFB37A90E23F416F5563AA63F1847 /* PBXContainerItemProxy */;
-		};
-		83466C155366B5DD4B8144D574AE6AF4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MGStarRatingView;
-			target = 74E9B30F565AFF2640A0AC406410D9E5 /* MGStarRatingView */;
-			targetProxy = 90F0D651C61830ADE4C61C1CB75B2FE2 /* PBXContainerItemProxy */;
+			name = SwiftyStarRatingView;
+			target = 3187B53FBD269B47EC46CE6994123A39 /* SwiftyStarRatingView */;
+			targetProxy = 5877ECC331FACAC2D6705F47088A38C3 /* PBXContainerItemProxy */;
 		};
 		AA3C9888E6E87A590DA6EC1BECB5D82B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MomsDayDaughter";
-			target = 6ABF2E352D52D076A1ACCE478FB4BDAA /* Pods-MomsDayDaughter */;
+			target = 504B6AB8FC17A2839801B19EFF151EC6 /* Pods-MomsDayDaughter */;
 			targetProxy = 1FCE17CE62A3DEFFC90B94CCF0AFFA2A /* PBXContainerItemProxy */;
 		};
-		BFD3142CE27605B27479A7539FEBA08B /* PBXTargetDependency */ = {
+		D9C02C53708827DBBE10679AA596059E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UITextView+Placeholder";
+			target = 6756D7BC91FFC151AF1FFF706C090E93 /* UITextView+Placeholder */;
+			targetProxy = AC02D13C1D2B11F22E3AB452632ECAB0 /* PBXContainerItemProxy */;
+		};
+		F3D2AF422A384C12C804A2D8D5C48290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DLRadioButton;
 			target = 46BD0675E3AE6FB8C284CB79F1013052 /* DLRadioButton */;
-			targetProxy = 2DD187DFEA54D1B16326183B0894F7DA /* PBXContainerItemProxy */;
+			targetProxy = 977800CA4CB9E65AB3E49DFB0CA20B90 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0C4DEB0C4EF503B43F0B8DE7F22D8BE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E5A8179A0B63F65A3FE1C773981A1FF /* SwiftyStarRatingView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyStarRatingView/SwiftyStarRatingView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyStarRatingView/SwiftyStarRatingView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyStarRatingView/SwiftyStarRatingView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyStarRatingView;
+				PRODUCT_NAME = SwiftyStarRatingView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1D2347FF16D0E0EDA4D9EF07534115A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02C8004B32230FB41C372BD441C560E3 /* DLRadioButton.xcconfig */;
+			baseConfigurationReference = F7ABB851FF66BFA6F2F688C080DBC313 /* DLRadioButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -642,12 +677,10 @@
 			};
 			name = Debug;
 		};
-		2FC726272D6A9FC5281BE89DBB270FAC /* Release */ = {
+		46CE7C25641E6B6A51F523B4C3AE6359 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18D266E569BE09CBCDC50F20B2E9BE33 /* Pods-MomsDayDaughter.release.xcconfig */;
+			baseConfigurationReference = 8EC83B07039E4F96357AA23DE04B6130 /* UITextView+Placeholder.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -657,23 +690,57 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder.modulemap";
+				PRODUCT_MODULE_NAME = UITextView_Placeholder;
+				PRODUCT_NAME = UITextView_Placeholder;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E3E23EC32104137A1437FD070BB7113 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC83B07039E4F96357AA23DE04B6130 /* UITextView+Placeholder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder.modulemap";
+				PRODUCT_MODULE_NAME = UITextView_Placeholder;
+				PRODUCT_NAME = UITextView_Placeholder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -681,47 +748,9 @@
 			};
 			name = Release;
 		};
-		4F72FBCA6F973E046625635E7A0C0000 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 205A2F08CF63415FAB548A1F42D1BE3E /* Pods-MomsDayDaughter.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		642C8C4F58A5F02D977C8A086649F222 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02C8004B32230FB41C372BD441C560E3 /* DLRadioButton.xcconfig */;
+			baseConfigurationReference = F7ABB851FF66BFA6F2F688C080DBC313 /* DLRadioButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -793,6 +822,45 @@
 			};
 			name = Debug;
 		};
+		96B2D529999BA5FB9AAB24089003F12D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D266E569BE09CBCDC50F20B2E9BE33 /* Pods-MomsDayDaughter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -852,76 +920,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		A2347423FF26C55335BD7C6D6B3C59B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80BB643BAFEB7D83327E0BE3A06E2A65 /* MGStarRatingView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MGStarRatingView/MGStarRatingView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MGStarRatingView/MGStarRatingView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MGStarRatingView/MGStarRatingView.modulemap";
-				PRODUCT_MODULE_NAME = MGStarRatingView;
-				PRODUCT_NAME = MGStarRatingView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B273D4FE5E11BABDF143530A5BA5C2CB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE59DD5A5A3CA0C2A2EFECBC79FC3B35 /* UITextView+Placeholder.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder.modulemap";
-				PRODUCT_MODULE_NAME = UITextView_Placeholder;
-				PRODUCT_NAME = UITextView_Placeholder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -987,10 +985,12 @@
 			};
 			name = Debug;
 		};
-		C42EA62A6D99A36E11E0C0E9B3E51068 /* Release */ = {
+		EF24BAECFF37ABCA946A073E5570DFDA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE59DD5A5A3CA0C2A2EFECBC79FC3B35 /* UITextView+Placeholder.xcconfig */;
+			baseConfigurationReference = 205A2F08CF63415FAB548A1F42D1BE3E /* Pods-MomsDayDaughter.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1000,32 +1000,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/UITextView+Placeholder/UITextView+Placeholder.modulemap";
-				PRODUCT_MODULE_NAME = UITextView_Placeholder;
-				PRODUCT_NAME = UITextView_Placeholder;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		E2BC9AEAACE139C9848710989116AB33 /* Release */ = {
+		FA4DAD4D295978C25EF4B4630DD16694 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80BB643BAFEB7D83327E0BE3A06E2A65 /* MGStarRatingView.xcconfig */;
+			baseConfigurationReference = 3E5A8179A0B63F65A3FE1C773981A1FF /* SwiftyStarRatingView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1036,8 +1036,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MGStarRatingView/MGStarRatingView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MGStarRatingView/MGStarRatingView-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyStarRatingView/SwiftyStarRatingView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyStarRatingView/SwiftyStarRatingView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1045,9 +1045,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/MGStarRatingView/MGStarRatingView.modulemap";
-				PRODUCT_MODULE_NAME = MGStarRatingView;
-				PRODUCT_NAME = MGStarRatingView;
+				MODULEMAP_FILE = "Target Support Files/SwiftyStarRatingView/SwiftyStarRatingView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyStarRatingView;
+				PRODUCT_NAME = SwiftyStarRatingView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1110,11 +1110,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E329BE4845E2BDD82B537F584D16E59 /* Build configuration list for PBXNativeTarget "MGStarRatingView" */ = {
+		3414994843542BCEFC842AEDF9C70FAE /* Build configuration list for PBXNativeTarget "SwiftyStarRatingView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2347423FF26C55335BD7C6D6B3C59B9 /* Debug */,
-				E2BC9AEAACE139C9848710989116AB33 /* Release */,
+				0C4DEB0C4EF503B43F0B8DE7F22D8BE7 /* Debug */,
+				FA4DAD4D295978C25EF4B4630DD16694 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1137,20 +1137,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB3A91493A841F11AAFD5EE7BF2F5AB3 /* Build configuration list for PBXNativeTarget "UITextView+Placeholder" */ = {
+		B9AAC2393F0162DFE94BE3663B8D79C9 /* Build configuration list for PBXNativeTarget "Pods-MomsDayDaughter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B273D4FE5E11BABDF143530A5BA5C2CB /* Debug */,
-				C42EA62A6D99A36E11E0C0E9B3E51068 /* Release */,
+				EF24BAECFF37ABCA946A073E5570DFDA /* Debug */,
+				96B2D529999BA5FB9AAB24089003F12D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E3C407C81EFFDBF9BE854A20D90338F0 /* Build configuration list for PBXNativeTarget "Pods-MomsDayDaughter" */ = {
+		FB96363FD71040A35DFC80F67DE81E3A /* Build configuration list for PBXNativeTarget "UITextView+Placeholder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F72FBCA6F973E046625635E7A0C0000 /* Debug */,
-				2FC726272D6A9FC5281BE89DBB270FAC /* Release */,
+				46CE7C25641E6B6A51F523B4C3AE6359 /* Debug */,
+				4E3E23EC32104137A1437FD070BB7113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

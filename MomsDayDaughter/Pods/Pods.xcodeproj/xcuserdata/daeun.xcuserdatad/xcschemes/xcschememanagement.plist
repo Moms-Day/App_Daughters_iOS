@@ -11,21 +11,21 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>MGStarRatingView.xcscheme</key>
+		<key>Pods-MomsDayDaughter.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Pods-MomsDayDaughter.xcscheme</key>
+		<key>Pods-MomsDayDaughterTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>Pods-MomsDayDaughterTests.xcscheme</key>
+		<key>SwiftyStarRatingView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

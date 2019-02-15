@@ -8,7 +8,6 @@
 
 import UIKit
 import UITextView_Placeholder
-import MGStarRatingView
 
 
 class EvaluateVC: UIViewController {

@@ -6,7 +6,7 @@ target 'MomsDayDaughter' do
   use_frameworks!
 
   # Pods for MomsDayDaughter
-pod 'MGStarRatingView', '~> 0.3.0'
+pod 'SwiftyStarRatingView'
 pod 'DLRadioButton', '~> 1.4'
 pod 'UITextView+Placeholder'
   target 'MomsDayDaughterTests' do

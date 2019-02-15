@@ -843,9 +843,10 @@
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXQ-72-9d0" customClass="StarRatingView" customModule="MGStarRatingView">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXQ-72-9d0" customClass="SwiftyStarRatingView" customModule="SwiftyStarRatingView">
                                                         <rect key="frame" x="218" y="65" width="120" height="30"/>
                                                         <color key="backgroundColor" red="0.92443495990000002" green="0.92353451249999996" blue="0.82743662600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="tintColor" red="0.32941418890000002" green="0.32940739390000001" blue="0.32941198350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="Ril-4x-mjz"/>
                                                             <constraint firstAttribute="width" constant="120" id="xZH-RP-4dG"/>
@@ -870,6 +871,12 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="point">
                                                                 <real key="value" value="20"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allowsHalfStars" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="accurateHalfStars" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="continuous" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
@@ -926,9 +933,10 @@
                                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0K-Ts-fdQ" customClass="StarRatingView" customModule="MGStarRatingView">
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0K-Ts-fdQ" customClass="SwiftyStarRatingView" customModule="SwiftyStarRatingView">
                                                                             <rect key="frame" x="218" y="65.5" width="120" height="30"/>
                                                                             <color key="backgroundColor" red="0.92443495990000002" green="0.92353451249999996" blue="0.82743662600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="tintColor" red="0.32941418890000002" green="0.32940739390000001" blue="0.32941198350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="dse-cB-Jzl"/>
                                                                                 <constraint firstAttribute="height" constant="30" id="isN-U2-jOs"/>
@@ -955,6 +963,12 @@
                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="point">
                                                                                     <real key="value" value="20"/>
                                                                                 </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                                                    <real key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="accurateHalfStars" value="NO"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowsHalfStars" value="YES"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="continuous" value="NO"/>
                                                                             </userDefinedRuntimeAttributes>
                                                                         </view>
                                                                     </subviews>
@@ -984,7 +998,7 @@
                                                             <outlet property="rankImage" destination="8A0-be-Lts" id="Xam-Az-q9l"/>
                                                             <outlet property="rankLocationLabel" destination="5Ni-hm-VXG" id="sOZ-wn-I4w"/>
                                                             <outlet property="rankNameLabel" destination="vwr-f9-i7C" id="bsP-tE-32N"/>
-                                                            <outlet property="rankStarRatingView" destination="t0K-Ts-fdQ" id="Rps-gi-NY4"/>
+                                                            <outlet property="rankStarRatingView" destination="t0K-Ts-fdQ" id="oC9-BA-zvY"/>
                                                             <segue destination="MTP-0v-Ahc" kind="show" id="joW-1Z-DPE"/>
                                                         </connections>
                                                     </tableViewCell>
@@ -1044,7 +1058,7 @@
                     <connections>
                         <outlet property="myLabel" destination="ILy-wD-Xo9" id="wWg-2O-o9c"/>
                         <outlet property="myRankView" destination="7j8-Bh-lTL" id="boU-wz-4OV"/>
-                        <outlet property="myStarRatingView" destination="nXQ-72-9d0" id="JE6-8O-C7z"/>
+                        <outlet property="myStarRatingView" destination="nXQ-72-9d0" id="84s-2M-mUe"/>
                         <outlet property="rankLabel" destination="HRC-dt-wKr" id="RPA-ty-4gG"/>
                         <outlet property="rankTableView" destination="BAO-Y6-hQo" id="tu8-LJ-cIn"/>
                         <segue destination="MTP-0v-Ahc" kind="show" identifier="showMyInform" id="4Dm-ta-iUI"/>

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double MGStarRatingViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char MGStarRatingViewVersionString[];
+FOUNDATION_EXPORT double SwiftyStarRatingViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char SwiftyStarRatingViewVersionString[];
 
