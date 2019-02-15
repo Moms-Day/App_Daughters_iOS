@@ -47,7 +47,6 @@ extension RankContentVC: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rankCell") as! rankDTO
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
-        cell.rankStarRatingView.justDisplay()
         return cell
     }
 }

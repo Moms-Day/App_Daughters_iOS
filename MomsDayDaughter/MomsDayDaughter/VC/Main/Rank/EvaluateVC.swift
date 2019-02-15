@@ -38,3 +38,18 @@ class EvaluateVC: UIViewController {
     }
 }
 
+extension EvaluateVC: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "evaluateCell") as! evaluateDTO
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        return cell
+    }
+}
+
+internal class evaluateDTO: UITableViewCell {
+    
+}
