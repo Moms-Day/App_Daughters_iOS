@@ -24,7 +24,9 @@
 		C97E388C22112333003B8A3B /* EvaluateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E388B22112333003B8A3B /* EvaluateVC.swift */; };
 		C97ECC2A21AFA7F7000F9218 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ECC2921AFA7F7000F9218 /* Color.swift */; };
 		C9896CF0220BD57B00EB7E29 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9896CEF220BD57B00EB7E29 /* ChatVC.swift */; };
-		C9896D1E220C200C00EB7E29 /* RankInformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9896D1D220C200C00EB7E29 /* RankInformVC.swift */; };
+		C9896D1E220C200C00EB7E29 /* HospitalInformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9896D1D220C200C00EB7E29 /* HospitalInformVC.swift */; };
+		C99CC077222AD02F006DB2AE /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99CC076222AD02F006DB2AE /* MyPage.storyboard */; };
+		C99CC07B222AD469006DB2AE /* CareworkerInformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99CC07A222AD469006DB2AE /* CareworkerInformVC.swift */; };
 		C9AA8F8C2226C064000575DF /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C321F6EF4600A84CB8 /* Chat.storyboard */; };
 		C9B998C221F6EEDF00A84CB8 /* Inquiry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */; };
 		C9B998C621F6EF9700A84CB8 /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C521F6EF9700A84CB8 /* Rank.storyboard */; };
@@ -72,7 +74,9 @@
 		C97E388B22112333003B8A3B /* EvaluateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateVC.swift; sourceTree = "<group>"; };
 		C97ECC2921AFA7F7000F9218 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C9896CEF220BD57B00EB7E29 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
-		C9896D1D220C200C00EB7E29 /* RankInformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankInformVC.swift; sourceTree = "<group>"; };
+		C9896D1D220C200C00EB7E29 /* HospitalInformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalInformVC.swift; sourceTree = "<group>"; };
+		C99CC076222AD02F006DB2AE /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		C99CC07A222AD469006DB2AE /* CareworkerInformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareworkerInformVC.swift; sourceTree = "<group>"; };
 		C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Inquiry.storyboard; sourceTree = "<group>"; };
 		C9B998C321F6EF4600A84CB8 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		C9B998C521F6EF9700A84CB8 /* Rank.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 				C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */,
 				C9B998C321F6EF4600A84CB8 /* Chat.storyboard */,
 				C9B998C521F6EF9700A84CB8 /* Rank.storyboard */,
+				C99CC076222AD02F006DB2AE /* MyPage.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -251,8 +256,9 @@
 			children = (
 				C9CB929A21F9B88C007513C3 /* RankVC.swift */,
 				C929FB3322040602003B7A97 /* RankContentVC.swift */,
-				C9896D1D220C200C00EB7E29 /* RankInformVC.swift */,
+				C9896D1D220C200C00EB7E29 /* HospitalInformVC.swift */,
 				C97E388B22112333003B8A3B /* EvaluateVC.swift */,
+				C99CC07A222AD469006DB2AE /* CareworkerInformVC.swift */,
 			);
 			path = Rank;
 			sourceTree = "<group>";
@@ -347,6 +353,7 @@
 				C963C27721AAE94B00309467 /* logo.png in Resources */,
 				C963C25A21AADB4A00309467 /* Assets.xcassets in Resources */,
 				C9B998C221F6EEDF00A84CB8 /* Inquiry.storyboard in Resources */,
+				C99CC077222AD02F006DB2AE /* MyPage.storyboard in Resources */,
 				C9B998C621F6EF9700A84CB8 /* Rank.storyboard in Resources */,
 				C963C25821AADB4800309467 /* Login.storyboard in Resources */,
 				C9AA8F8C2226C064000575DF /* Chat.storyboard in Resources */,
@@ -446,9 +453,10 @@
 				C9CB929921F9B87F007513C3 /* ChatListVC.swift in Sources */,
 				C9D8B2C221B5744000D3C6A4 /* MainVC.swift in Sources */,
 				C929FB3422040602003B7A97 /* RankContentVC.swift in Sources */,
+				C99CC07B222AD469006DB2AE /* CareworkerInformVC.swift in Sources */,
 				C9CB929B21F9B88C007513C3 /* RankVC.swift in Sources */,
 				C963C25521AADB4800309467 /* LoginVC.swift in Sources */,
-				C9896D1E220C200C00EB7E29 /* RankInformVC.swift in Sources */,
+				C9896D1E220C200C00EB7E29 /* HospitalInformVC.swift in Sources */,
 				C90F693D21AE894A000DF237 /* Shape.swift in Sources */,
 				C9CB929221F9B433007513C3 /* InquiryVC.swift in Sources */,
 				C97ECC2A21AFA7F7000F9218 /* Color.swift in Sources */,

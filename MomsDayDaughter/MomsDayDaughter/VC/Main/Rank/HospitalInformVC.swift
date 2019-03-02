@@ -8,29 +8,14 @@
 
 import UIKit
 
-class RankInformVC: UIViewController {
-
-    @IBOutlet weak var hospitalScoreView: UIView!
-    @IBOutlet weak var careworkerScoreView: UIView!
-    @IBOutlet weak var reviewLabel: UILabel!
-    @IBOutlet weak var scoreViewContainer: UIView!
-    
-    var id: Bool! //hospital: true, careowrker: false
+class HospitalInformVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if id {
-            hospitalScoreView.isHidden = false
-            careworkerScoreView.isHidden = true
-        } else {
-            hospitalScoreView.isHidden = true
-            careworkerScoreView.isHidden = false
-        }
     }
 }
 
-extension RankInformVC: UITableViewDataSource, UITableViewDelegate {
+extension HospitalInformVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
@@ -40,8 +25,6 @@ extension RankInformVC: UITableViewDataSource, UITableViewDelegate {
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell
     }
-    
-    
 }
 
 internal class reviewDTO: UITableViewCell {
