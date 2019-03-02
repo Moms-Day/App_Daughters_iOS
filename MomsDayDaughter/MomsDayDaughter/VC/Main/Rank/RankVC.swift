@@ -37,6 +37,16 @@ class RankVC: UIViewController {
             pageViewController.delegate = self
             pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: false, completion: nil)
         }
+        
+        if(segue.identifier == "goEvaluate") {
+            let evaluateVC = segue.destination as! EvaluateVC
+            switch segmentedControl.selectedSegmentIndex {
+            case 0:
+                evaluateVC.id = true
+            default:
+                evaluateVC.id = false
+            }
+        }
     }
     
     @IBAction func adapterChanged(_ sender: UISegmentedControl) {
@@ -46,6 +56,11 @@ class RankVC: UIViewController {
         default:
             pageViewController.setViewControllers([viewControllers[1]], direction: .forward, animated: false, completion: nil)
         }
+    }
+    
+    @IBAction func goEvaluate(_ sender: Any) {
+        performSegue(withIdentifier: "goEvaluate", sender: self)
+        
     }
     
 }

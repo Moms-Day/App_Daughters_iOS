@@ -13,6 +13,11 @@ import UITextView_Placeholder
 class EvaluateVC: UIViewController {
 
     @IBOutlet weak var oneLineTextView: UITextView!
+    @IBOutlet weak var evaluateListTableView: dynamicTableView!
+    
+    var id: Bool! //hospital: true, careowrker: false
+    var evaluateList: [String]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,8 +30,16 @@ class EvaluateVC: UIViewController {
         titleLabel.textAlignment = .center
         titleLabel.textColor = .black
         
+        if id {
+            evaluateList = ["시설", "식단", "일정", "비용", "서비스"]
+        } else {
+            evaluateList = ["성실", "친절도"]
+        }
+        evaluateListTableView.height = CGFloat(55 * evaluateList.count)
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "완료", style: .plain, target: self, action: #selector(finishEvaluate))
     }
+    
     @objc func finishEvaluate() {
         let alert = UIAlertController(title: "요양병원 평가가 완료되었습니다.", message: "", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: {(UIAlertAction) -> Void in _ = self.navigationController?.popViewController(animated: true)}))
@@ -40,16 +53,18 @@ class EvaluateVC: UIViewController {
 
 extension EvaluateVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return evaluateList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "evaluateCell") as! evaluateDTO
+        cell.evaluateListLabel.text = evaluateList![indexPath.row]
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        
         return cell
     }
 }
 
 internal class evaluateDTO: UITableViewCell {
-    
+    @IBOutlet weak var evaluateListLabel: UILabel!
 }

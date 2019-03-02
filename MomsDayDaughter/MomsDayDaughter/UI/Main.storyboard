@@ -12,7 +12,6 @@
         <!--MainVC-->
         <scene sceneID="KU0-Wb-k6d">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z3m-ng-8LZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eP4-Y7-17g" customClass="MainVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5KQ-SM-kkD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -25,6 +24,7 @@
                         <segue destination="SQj-da-DRu" kind="relationship" relationship="viewControllers" id="bhC-zZ-Jov"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z3m-ng-8LZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-845" y="-743"/>
         </scene>
