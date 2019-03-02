@@ -37,6 +37,17 @@ class RankContentVC: UIViewController {
     @objc func goMyRankInform(sender : UITapGestureRecognizer) {
         self.performSegue(withIdentifier: "showMyInform", sender: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let rankInformVC = segue.destination as! RankInformVC
+        
+        if id {
+            rankInformVC.id = true
+        } else {
+            rankInformVC.id = false
+        }
+    }
 }
 
 extension RankContentVC: UITableViewDataSource,UITableViewDelegate {

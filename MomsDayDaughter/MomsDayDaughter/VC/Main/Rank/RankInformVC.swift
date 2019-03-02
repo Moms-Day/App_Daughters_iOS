@@ -15,7 +15,7 @@ class RankInformVC: UIViewController {
     @IBOutlet weak var reviewLabel: UILabel!
     @IBOutlet weak var scoreViewContainer: UIView!
     
-    var id: Bool = false //hospital: true, careowrker: false
+    var id: Bool! //hospital: true, careowrker: false
     
     override func viewDidLoad() {
         super.viewDidLoad()
