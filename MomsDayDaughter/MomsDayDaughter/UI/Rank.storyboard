@@ -491,7 +491,7 @@
                                                             <outlet property="rankLocationLabel" destination="5Ni-hm-VXG" id="sOZ-wn-I4w"/>
                                                             <outlet property="rankNameLabel" destination="vwr-f9-i7C" id="bsP-tE-32N"/>
                                                             <outlet property="rankStarRatingView" destination="t0K-Ts-fdQ" id="oC9-BA-zvY"/>
-                                                            <segue destination="MTP-0v-Ahc" kind="show" id="joW-1Z-DPE"/>
+                                                            <outlet property="rankView" destination="hyg-sI-Lwo" id="PnZ-oG-29t"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
@@ -553,7 +553,8 @@
                         <outlet property="myStarRatingView" destination="nXQ-72-9d0" id="84s-2M-mUe"/>
                         <outlet property="rankLabel" destination="HRC-dt-wKr" id="RPA-ty-4gG"/>
                         <outlet property="rankTableView" destination="BAO-Y6-hQo" id="tu8-LJ-cIn"/>
-                        <segue destination="MTP-0v-Ahc" kind="show" identifier="showMyInform" id="4Dm-ta-iUI"/>
+                        <segue destination="MTP-0v-Ahc" kind="show" identifier="showHospitalInform" id="xRK-bW-20a"/>
+                        <segue destination="OzK-es-MLu" kind="show" identifier="showCareworkerInform" id="f6e-cC-oLj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxR-Vn-raT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -886,7 +887,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kt2-pb-jc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3408.8000000000002" y="-434.03298350824593"/>
+            <point key="canvasLocation" x="2658" y="-1164"/>
         </scene>
         <!--Careworker InformVC-->
         <scene sceneID="0QF-4X-ZDS">
@@ -1103,13 +1104,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fns-HO-db8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4072.8000000000002" y="-431.33433283358323"/>
+            <point key="canvasLocation" x="3457" y="-1164"/>
         </scene>
     </scenes>
     <resources>
         <image name="icon_pencil.png" width="18" height="18"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="joW-1Z-DPE"/>
-    </inferredMetricsTieBreakers>
 </document>

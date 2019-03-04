@@ -31,22 +31,17 @@ class RankContentVC: UIViewController {
         }
         
         rankTableView.height = (110*7)
-        self.myRankView.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(goMyRankInform)))
+        self.myRankView.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(goRankInform)))
     }
     
-    @objc func goMyRankInform(sender : UITapGestureRecognizer) {
-        self.performSegue(withIdentifier: "showMyInform", sender: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let rankInformVC = segue.destination as! RankInformVC
-        
+    @objc func goRankInform(sender : UITapGestureRecognizer) {
         if id {
-            rankInformVC.id = true
+            self.performSegue(withIdentifier: "showHospitalInform", sender: nil)
         } else {
-            rankInformVC.id = false
+            self.performSegue(withIdentifier: "showCareworkerInform", sender: nil)
         }
+        
+
     }
 }
 
@@ -58,6 +53,8 @@ extension RankContentVC: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rankCell") as! rankDTO
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        cell.rankView.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(goRankInform)))
+        
         return cell
     }
 }
@@ -67,4 +64,5 @@ internal class rankDTO: UITableViewCell {
     @IBOutlet weak var rankNameLabel: UILabel!
     @IBOutlet weak var rankLocationLabel: UILabel!
     @IBOutlet weak var rankStarRatingView: SwiftyStarRatingView!
+    @IBOutlet weak var rankView: UIView!
 }
