@@ -40,6 +40,7 @@
 		C9D8B2C021B5742E00D3C6A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D8B2BF21B5742E00D3C6A4 /* Main.storyboard */; };
 		C9D8B2C221B5744000D3C6A4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8B2C121B5744000D3C6A4 /* MainVC.swift */; };
 		C9E77C4B222D62A600516B9A /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E77C4A222D62A600516B9A /* MyPage.storyboard */; };
+		C9F09966222EA77300527669 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F09965222EA77300527669 /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		C9D8B2BF21B5742E00D3C6A4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C9D8B2C121B5744000D3C6A4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C9E77C4A222D62A600516B9A /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		C9F09965222EA77300527669 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		C963C25121AADB4800309467 /* MomsDayDaughter */ = {
 			isa = PBXGroup;
 			children = (
+				C9F09964222EA74700527669 /* Model */,
 				C90F693A21AE8926000DF237 /* Util */,
 				C963C27521AAE91C00309467 /* Image */,
 				C963C27321AAE90A00309467 /* UI */,
@@ -281,6 +284,14 @@
 				C99CC07A222AD469006DB2AE /* CareworkerInformVC.swift */,
 			);
 			path = Rank;
+			sourceTree = "<group>";
+		};
+		C9F09964222EA74700527669 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9F09965222EA77300527669 /* LoginModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,6 +490,7 @@
 				C9CB929921F9B87F007513C3 /* ChatListVC.swift in Sources */,
 				C9B21CD4222E666400A21DC5 /* ConnectVC.swift in Sources */,
 				C9B21CD6222E667D00A21DC5 /* SearchHospitalVC.swift in Sources */,
+				C9F09966222EA77300527669 /* LoginModel.swift in Sources */,
 				C9D8B2C221B5744000D3C6A4 /* MainVC.swift in Sources */,
 				C929FB3422040602003B7A97 /* RankContentVC.swift in Sources */,
 				C9B21CD0222E615700A21DC5 /* MyPageVC.swift in Sources */,
