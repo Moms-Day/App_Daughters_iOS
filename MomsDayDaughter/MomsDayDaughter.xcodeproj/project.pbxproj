@@ -25,7 +25,6 @@
 		C97ECC2A21AFA7F7000F9218 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ECC2921AFA7F7000F9218 /* Color.swift */; };
 		C9896CF0220BD57B00EB7E29 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9896CEF220BD57B00EB7E29 /* ChatVC.swift */; };
 		C9896D1E220C200C00EB7E29 /* HospitalInformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9896D1D220C200C00EB7E29 /* HospitalInformVC.swift */; };
-		C99CC077222AD02F006DB2AE /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99CC076222AD02F006DB2AE /* MyPage.storyboard */; };
 		C99CC07B222AD469006DB2AE /* CareworkerInformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99CC07A222AD469006DB2AE /* CareworkerInformVC.swift */; };
 		C9AA8F8C2226C064000575DF /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C321F6EF4600A84CB8 /* Chat.storyboard */; };
 		C9B998C221F6EEDF00A84CB8 /* Inquiry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */; };
@@ -36,6 +35,7 @@
 		C9CB929B21F9B88C007513C3 /* RankVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB929A21F9B88C007513C3 /* RankVC.swift */; };
 		C9D8B2C021B5742E00D3C6A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D8B2BF21B5742E00D3C6A4 /* Main.storyboard */; };
 		C9D8B2C221B5744000D3C6A4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8B2C121B5744000D3C6A4 /* MainVC.swift */; };
+		C9E77C4B222D62A600516B9A /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E77C4A222D62A600516B9A /* MyPage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +75,6 @@
 		C97ECC2921AFA7F7000F9218 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C9896CEF220BD57B00EB7E29 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		C9896D1D220C200C00EB7E29 /* HospitalInformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalInformVC.swift; sourceTree = "<group>"; };
-		C99CC076222AD02F006DB2AE /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		C99CC07A222AD469006DB2AE /* CareworkerInformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareworkerInformVC.swift; sourceTree = "<group>"; };
 		C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Inquiry.storyboard; sourceTree = "<group>"; };
 		C9B998C321F6EF4600A84CB8 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		C9CB929A21F9B88C007513C3 /* RankVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankVC.swift; sourceTree = "<group>"; };
 		C9D8B2BF21B5742E00D3C6A4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C9D8B2C121B5744000D3C6A4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C9E77C4A222D62A600516B9A /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +207,7 @@
 				C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */,
 				C9B998C321F6EF4600A84CB8 /* Chat.storyboard */,
 				C9B998C521F6EF9700A84CB8 /* Rank.storyboard */,
-				C99CC076222AD02F006DB2AE /* MyPage.storyboard */,
+				C9E77C4A222D62A600516B9A /* MyPage.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -353,7 +353,7 @@
 				C963C27721AAE94B00309467 /* logo.png in Resources */,
 				C963C25A21AADB4A00309467 /* Assets.xcassets in Resources */,
 				C9B998C221F6EEDF00A84CB8 /* Inquiry.storyboard in Resources */,
-				C99CC077222AD02F006DB2AE /* MyPage.storyboard in Resources */,
+				C9E77C4B222D62A600516B9A /* MyPage.storyboard in Resources */,
 				C9B998C621F6EF9700A84CB8 /* Rank.storyboard in Resources */,
 				C963C25821AADB4800309467 /* Login.storyboard in Resources */,
 				C9AA8F8C2226C064000575DF /* Chat.storyboard in Resources */,

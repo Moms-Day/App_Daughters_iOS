@@ -23,6 +23,12 @@ class MainVC: UITabBarController {
         titleLabel.text = "메인"
         titleLabel.textAlignment = .center
         titleLabel.textColor = .black
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "More", style: .plain, target: self, action: #selector(goMyPage))
+    }
+    
+    @objc func goMyPage() {
+        self.performSegue(withIdentifier: "goMyPage", sender: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
