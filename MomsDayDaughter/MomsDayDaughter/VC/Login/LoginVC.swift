@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginVC: UIViewController {
     
@@ -24,14 +25,23 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func login(_ sender: UIButton) {
-        if pwLabel.text == "1234" {
-//            performSegue(withIdentifier: "login", sender: self)
-        } else {
-            let alert = UIAlertController(title: "비밀번호 오류", message: "비밀번호가 맞지 않습니다.", preferredStyle: UIAlertController.Style.alert)
+        
+        if (idLabel.text?.isEmpty)! || (pwLabel.text?.isEmpty)! {
+            let alert = UIAlertController(title: "오류", message: "모두 입력해주세요.", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+        } else {
+            Alamofire.request("http://52.78.5.142/daughter/auth", method: .post, parameters: ["id": idLabel.text!,"pw":pwLabel.text!],encoding: JSONEncoding.default, headers: nil).response { response in
+                
+                if response.response?.statusCode == 200 {
+                    self.performSegue(withIdentifier: "goMain", sender: nil)
+                } else {
+                    let alert = UIAlertController(title: "오류", message: "아이디 또는 비밀번호가 맞지 않습니다.", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
         }
-        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){

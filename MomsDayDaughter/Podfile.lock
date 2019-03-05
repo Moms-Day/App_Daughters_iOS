@@ -1,24 +1,36 @@
 PODS:
+  - Alamofire (4.8.1)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
   - DLRadioButton (1.4.12)
+  - ObjectMapper (3.4.2)
   - SwiftyStarRatingView (1.0.4)
   - "UITextView+Placeholder (1.2.1)"
 
 DEPENDENCIES:
+  - AlamofireObjectMapper (~> 5.2)
   - DLRadioButton (~> 1.4)
   - SwiftyStarRatingView
   - "UITextView+Placeholder"
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
     - DLRadioButton
+    - ObjectMapper
     - SwiftyStarRatingView
     - "UITextView+Placeholder"
 
 SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
   DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   SwiftyStarRatingView: a2b0057700e0adeb8e7442c55d99cb53b531d2f4
   "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
 
-PODFILE CHECKSUM: 81e265e3cd8faf07ca531e9e2be597ef9740796c
+PODFILE CHECKSUM: c1f6360a74d06d7603175e42de7dca673a082cd8
 
 COCOAPODS: 1.6.0

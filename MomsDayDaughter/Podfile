@@ -9,6 +9,7 @@ target 'MomsDayDaughter' do
 pod 'SwiftyStarRatingView'
 pod 'DLRadioButton', '~> 1.4'
 pod 'UITextView+Placeholder'
+pod 'AlamofireObjectMapper', '~> 5.2'
   target 'MomsDayDaughterTests' do
     inherit! :search_paths
     # Pods for testing

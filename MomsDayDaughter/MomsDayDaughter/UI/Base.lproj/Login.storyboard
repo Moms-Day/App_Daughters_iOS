@@ -79,7 +79,6 @@
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="haN-e1-OcG"/>
-                                    <segue destination="VvO-Ep-haP" kind="show" identifier="login" id="kZs-4F-b4Z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qps-ai-lUr">
@@ -115,6 +114,7 @@
                     <connections>
                         <outlet property="idLabel" destination="rYL-ic-e5u" id="UYD-1V-Edb"/>
                         <outlet property="pwLabel" destination="0RN-Tb-vsr" id="1qM-iz-twa"/>
+                        <segue destination="VvO-Ep-haP" kind="show" identifier="goMain" id="r3I-Vf-cQD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
