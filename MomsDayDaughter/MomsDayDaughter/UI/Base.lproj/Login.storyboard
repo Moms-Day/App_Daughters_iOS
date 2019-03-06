@@ -183,10 +183,10 @@
             </objects>
             <point key="canvasLocation" x="1832.8" y="26.53673163418291"/>
         </scene>
-        <!--Sign Up ContentVC-->
+        <!--Sign Up First ContentVC-->
         <scene sceneID="ysF-y1-Izf">
             <objects>
-                <viewController storyboardIdentifier="signUpFirst" id="4eN-qT-aBW" customClass="SignUpContentVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUpFirst" id="4eN-qT-aBW" customClass="SignUpFirstContentVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="wCE-Hb-uJ9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,6 +296,11 @@
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="375" height="667"/>
                     <size key="freeformSize" width="375" height="559"/>
+                    <connections>
+                        <outlet property="idTextField" destination="12d-S4-0ns" id="Gka-Kj-err"/>
+                        <outlet property="pwCheckTextField" destination="WFE-fY-cz1" id="MMY-dh-1ir"/>
+                        <outlet property="pwTextField" destination="MXT-ct-EKX" id="cuZ-DQ-Sgg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lde-aI-tx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -309,10 +314,10 @@
             </objects>
             <point key="canvasLocation" x="2684" y="26.53673163418291"/>
         </scene>
-        <!--Sign Up ContentVC-->
+        <!--Sign Up Second ContentVC-->
         <scene sceneID="xb0-fQ-YjP">
             <objects>
-                <viewController storyboardIdentifier="signUpSecond" id="ro4-Sl-15u" customClass="SignUpContentVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUpSecond" id="ro4-Sl-15u" customClass="SignUpSecondContentVC" customModule="MomsDayDaughter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="UcR-IB-1uo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -465,6 +470,12 @@
                         <viewLayoutGuide key="safeArea" id="4iE-BT-xNb"/>
                     </view>
                     <size key="freeformSize" width="375" height="559"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="VaL-1Z-V2N" id="Ffe-kU-Aga"/>
+                        <outlet property="certifyCodeTextField" destination="oDw-WX-7AT" id="4m9-pk-5Bg"/>
+                        <outlet property="nameTextField" destination="DO0-2M-MKk" id="YLg-Qb-jk1"/>
+                        <outlet property="telTextField" destination="W59-nD-RV7" id="E6j-PR-IyQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hed-TV-Xj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
