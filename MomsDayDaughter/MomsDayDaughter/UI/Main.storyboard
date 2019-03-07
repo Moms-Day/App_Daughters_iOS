@@ -9,13 +9,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Rank-->
+        <scene sceneID="Dzk-PZ-7N4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Rank" id="JbG-kj-bYU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zt0-cS-Rdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-246" y="-1031"/>
+        </scene>
+        <!--connect-->
+        <scene sceneID="TIk-QC-jCW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyPage" referencedIdentifier="connect" id="Pmi-cD-EMp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fhd-K0-7XL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391" y="-1174"/>
+        </scene>
         <!--MyPage-->
         <scene sceneID="mFS-5h-yqV">
             <objects>
                 <viewControllerPlaceholder storyboardName="MyPage" id="jm6-FR-IJ5" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivZ-HF-Boy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-846" y="-1153"/>
+            <point key="canvasLocation" x="-295" y="-1100"/>
         </scene>
         <!--MainVC-->
         <scene sceneID="KU0-Wb-k6d">
@@ -31,6 +47,8 @@
                         <segue destination="lAM-6l-q64" kind="relationship" relationship="viewControllers" id="jhu-Qw-NQE"/>
                         <segue destination="SQj-da-DRu" kind="relationship" relationship="viewControllers" id="bhC-zZ-Jov"/>
                         <segue destination="jm6-FR-IJ5" kind="show" identifier="goMyPage" id="2FW-Zk-koT"/>
+                        <segue destination="JbG-kj-bYU" kind="show" identifier="goRank" id="MC8-dq-Q3P"/>
+                        <segue destination="Pmi-cD-EMp" kind="show" identifier="goConnect" id="Yys-ul-ASj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z3m-ng-8LZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
