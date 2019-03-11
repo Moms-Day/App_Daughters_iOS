@@ -21,6 +21,7 @@
 		C963C26821AADB4A00309467 /* MomsDayDaughterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963C26721AADB4A00309467 /* MomsDayDaughterTests.swift */; };
 		C963C27721AAE94B00309467 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C963C27621AAE94B00309467 /* logo.png */; };
 		C963C27921AAE95400309467 /* icon_app.png in Resources */ = {isa = PBXBuildFile; fileRef = C963C27821AAE95400309467 /* icon_app.png */; };
+		C970E2A42231FBCA00776D41 /* InquiryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C970E2A32231FBCA00776D41 /* InquiryModel.swift */; };
 		C97E388C22112333003B8A3B /* EvaluateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E388B22112333003B8A3B /* EvaluateVC.swift */; };
 		C97ECC2A21AFA7F7000F9218 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ECC2921AFA7F7000F9218 /* Color.swift */; };
 		C9896CF0220BD57B00EB7E29 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9896CEF220BD57B00EB7E29 /* ChatVC.swift */; };
@@ -32,6 +33,8 @@
 		C9B21CD2222E664E00A21DC5 /* ChangeMyInformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21CD1222E664E00A21DC5 /* ChangeMyInformVC.swift */; };
 		C9B21CD4222E666400A21DC5 /* ConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21CD3222E666400A21DC5 /* ConnectVC.swift */; };
 		C9B21CD6222E667D00A21DC5 /* SearchHospitalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21CD5222E667D00A21DC5 /* SearchHospitalVC.swift */; };
+		C9B6F66622369BE3004801A2 /* radio_on.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B6F66422369BE3004801A2 /* radio_on.png */; };
+		C9B6F66722369BE3004801A2 /* radio_off.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B6F66522369BE3004801A2 /* radio_off.png */; };
 		C9B998C221F6EEDF00A84CB8 /* Inquiry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */; };
 		C9B998C621F6EF9700A84CB8 /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C521F6EF9700A84CB8 /* Rank.storyboard */; };
 		C9CB929221F9B433007513C3 /* InquiryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB929121F9B433007513C3 /* InquiryVC.swift */; };
@@ -77,6 +80,7 @@
 		C963C26921AADB4A00309467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C963C27621AAE94B00309467 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		C963C27821AAE95400309467 /* icon_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_app.png; sourceTree = "<group>"; };
+		C970E2A32231FBCA00776D41 /* InquiryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryModel.swift; sourceTree = "<group>"; };
 		C97E388B22112333003B8A3B /* EvaluateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateVC.swift; sourceTree = "<group>"; };
 		C97ECC2921AFA7F7000F9218 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C9896CEF220BD57B00EB7E29 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 		C9B21CD1222E664E00A21DC5 /* ChangeMyInformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeMyInformVC.swift; sourceTree = "<group>"; };
 		C9B21CD3222E666400A21DC5 /* ConnectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectVC.swift; sourceTree = "<group>"; };
 		C9B21CD5222E667D00A21DC5 /* SearchHospitalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHospitalVC.swift; sourceTree = "<group>"; };
+		C9B6F66422369BE3004801A2 /* radio_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_on.png; sourceTree = "<group>"; };
+		C9B6F66522369BE3004801A2 /* radio_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_off.png; sourceTree = "<group>"; };
 		C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Inquiry.storyboard; sourceTree = "<group>"; };
 		C9B998C321F6EF4600A84CB8 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		C9B998C521F6EF9700A84CB8 /* Rank.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
@@ -229,6 +235,8 @@
 		C963C27521AAE91C00309467 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				C9B6F66422369BE3004801A2 /* radio_on.png */,
+				C9B6F66522369BE3004801A2 /* radio_off.png */,
 				C929FB312203EE99003B7A97 /* icon_pencil.png */,
 				C963C27821AAE95400309467 /* icon_app.png */,
 				C963C27621AAE94B00309467 /* logo.png */,
@@ -293,6 +301,7 @@
 			children = (
 				C9F09965222EA77300527669 /* LoginModel.swift */,
 				C9ABFB7622312E1100C4F520 /* MainModel.swift */,
+				C970E2A32231FBCA00776D41 /* InquiryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -390,7 +399,9 @@
 				C9E77C4B222D62A600516B9A /* MyPage.storyboard in Resources */,
 				C9B998C621F6EF9700A84CB8 /* Rank.storyboard in Resources */,
 				C963C25821AADB4800309467 /* Login.storyboard in Resources */,
+				C9B6F66622369BE3004801A2 /* radio_on.png in Resources */,
 				C9AA8F8C2226C064000575DF /* Chat.storyboard in Resources */,
+				C9B6F66722369BE3004801A2 /* radio_off.png in Resources */,
 				C929FB322203EE99003B7A97 /* icon_pencil.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +426,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MomsDayDaughter/Pods-MomsDayDaughter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -426,6 +438,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -505,6 +518,7 @@
 				C90F693D21AE894A000DF237 /* Shape.swift in Sources */,
 				C9CB929221F9B433007513C3 /* InquiryVC.swift in Sources */,
 				C97ECC2A21AFA7F7000F9218 /* Color.swift in Sources */,
+				C970E2A42231FBCA00776D41 /* InquiryModel.swift in Sources */,
 				C9ABFB7722312E1100C4F520 /* MainModel.swift in Sources */,
 				C962E07221EDC77E00CBAB6A /* SignUpVC.swift in Sources */,
 				C9CB929421F9B5AA007513C3 /* InquiryContentVC.swift in Sources */,

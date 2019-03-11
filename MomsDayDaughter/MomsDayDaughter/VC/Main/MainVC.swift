@@ -55,6 +55,9 @@ class MainVC: UITabBarController {
 
                     let mainModel: MainModel = response.result.value![0]
                     self.titleLabel.text = mainModel.name
+                    UserDefaults.standard.set(mainModel.id, forKey: "parentId")
+                    let firstVC = self.viewControllers![0] as! InquiryVC
+                    firstVC.callApi()
                 }
             } else {
                 let alert = UIAlertController(title: "오류", message: "\(response.response?.statusCode)", preferredStyle: UIAlertController.Style.alert)
