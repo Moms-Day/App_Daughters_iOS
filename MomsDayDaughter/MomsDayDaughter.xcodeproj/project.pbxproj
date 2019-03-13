@@ -21,6 +21,7 @@
 		C963C26821AADB4A00309467 /* MomsDayDaughterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963C26721AADB4A00309467 /* MomsDayDaughterTests.swift */; };
 		C963C27721AAE94B00309467 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C963C27621AAE94B00309467 /* logo.png */; };
 		C963C27921AAE95400309467 /* icon_app.png in Resources */ = {isa = PBXBuildFile; fileRef = C963C27821AAE95400309467 /* icon_app.png */; };
+		C96AB3C322377A3500CC5483 /* CareworkerRankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AB3C222377A3500CC5483 /* CareworkerRankModel.swift */; };
 		C970E2A42231FBCA00776D41 /* InquiryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C970E2A32231FBCA00776D41 /* InquiryModel.swift */; };
 		C97E388C22112333003B8A3B /* EvaluateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E388B22112333003B8A3B /* EvaluateVC.swift */; };
 		C97ECC2A21AFA7F7000F9218 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ECC2921AFA7F7000F9218 /* Color.swift */; };
@@ -35,6 +36,7 @@
 		C9B21CD6222E667D00A21DC5 /* SearchHospitalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21CD5222E667D00A21DC5 /* SearchHospitalVC.swift */; };
 		C9B6F66622369BE3004801A2 /* radio_on.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B6F66422369BE3004801A2 /* radio_on.png */; };
 		C9B6F66722369BE3004801A2 /* radio_off.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B6F66522369BE3004801A2 /* radio_off.png */; };
+		C9B6F6692236AAA2004801A2 /* FacilityRankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B6F6682236AAA2004801A2 /* FacilityRankModel.swift */; };
 		C9B998C221F6EEDF00A84CB8 /* Inquiry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */; };
 		C9B998C621F6EF9700A84CB8 /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C521F6EF9700A84CB8 /* Rank.storyboard */; };
 		C9CB929221F9B433007513C3 /* InquiryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB929121F9B433007513C3 /* InquiryVC.swift */; };
@@ -80,6 +82,7 @@
 		C963C26921AADB4A00309467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C963C27621AAE94B00309467 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		C963C27821AAE95400309467 /* icon_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_app.png; sourceTree = "<group>"; };
+		C96AB3C222377A3500CC5483 /* CareworkerRankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareworkerRankModel.swift; sourceTree = "<group>"; };
 		C970E2A32231FBCA00776D41 /* InquiryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryModel.swift; sourceTree = "<group>"; };
 		C97E388B22112333003B8A3B /* EvaluateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateVC.swift; sourceTree = "<group>"; };
 		C97ECC2921AFA7F7000F9218 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 		C9B21CD5222E667D00A21DC5 /* SearchHospitalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHospitalVC.swift; sourceTree = "<group>"; };
 		C9B6F66422369BE3004801A2 /* radio_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_on.png; sourceTree = "<group>"; };
 		C9B6F66522369BE3004801A2 /* radio_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_off.png; sourceTree = "<group>"; };
+		C9B6F6682236AAA2004801A2 /* FacilityRankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityRankModel.swift; sourceTree = "<group>"; };
 		C9B998C121F6EEDF00A84CB8 /* Inquiry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Inquiry.storyboard; sourceTree = "<group>"; };
 		C9B998C321F6EF4600A84CB8 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		C9B998C521F6EF9700A84CB8 /* Rank.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
@@ -302,6 +306,8 @@
 				C9F09965222EA77300527669 /* LoginModel.swift */,
 				C9ABFB7622312E1100C4F520 /* MainModel.swift */,
 				C970E2A32231FBCA00776D41 /* InquiryModel.swift */,
+				C9B6F6682236AAA2004801A2 /* FacilityRankModel.swift */,
+				C96AB3C222377A3500CC5483 /* CareworkerRankModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -504,6 +510,7 @@
 				C9896CF0220BD57B00EB7E29 /* ChatVC.swift in Sources */,
 				C97E388C22112333003B8A3B /* EvaluateVC.swift in Sources */,
 				C9CB929921F9B87F007513C3 /* ChatListVC.swift in Sources */,
+				C9B6F6692236AAA2004801A2 /* FacilityRankModel.swift in Sources */,
 				C9B21CD4222E666400A21DC5 /* ConnectVC.swift in Sources */,
 				C9B21CD6222E667D00A21DC5 /* SearchHospitalVC.swift in Sources */,
 				C9F09966222EA77300527669 /* LoginModel.swift in Sources */,
@@ -522,6 +529,7 @@
 				C9ABFB7722312E1100C4F520 /* MainModel.swift in Sources */,
 				C962E07221EDC77E00CBAB6A /* SignUpVC.swift in Sources */,
 				C9CB929421F9B5AA007513C3 /* InquiryContentVC.swift in Sources */,
+				C96AB3C322377A3500CC5483 /* CareworkerRankModel.swift in Sources */,
 				C963C25321AADB4800309467 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

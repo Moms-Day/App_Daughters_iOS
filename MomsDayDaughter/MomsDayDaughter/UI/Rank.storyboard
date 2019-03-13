@@ -202,13 +202,13 @@
                                     <outlet property="delegate" destination="lae-2F-sAt" id="ak6-qc-3Y3"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="총점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ5-a2-Cwb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="총점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ5-a2-Cwb">
                                 <rect key="frame" x="105" y="303.5" width="29.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YyA-z1-ZeG" customClass="SwiftyStarRatingView" customModule="SwiftyStarRatingView">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YyA-z1-ZeG" customClass="SwiftyStarRatingView" customModule="SwiftyStarRatingView">
                                 <rect key="frame" x="150" y="292" width="120" height="44"/>
                                 <color key="tintColor" red="0.32941418890000002" green="0.32940739390000001" blue="0.32941198350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -242,7 +242,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="continuous" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Gs-dk-tdP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Gs-dk-tdP">
                                 <rect key="frame" x="10" y="346" width="355" height="80"/>
                                 <color key="backgroundColor" red="0.92443495990000002" green="0.92353451249999996" blue="0.82743662600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -548,7 +548,10 @@
                     <value key="contentSizeForViewInPopover" type="size" width="375" height="667"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
+                        <outlet property="myImageView" destination="faj-X0-XH2" id="br9-gJ-7fh"/>
                         <outlet property="myLabel" destination="ILy-wD-Xo9" id="wWg-2O-o9c"/>
+                        <outlet property="myLocation" destination="Z97-2L-t5e" id="ABn-nq-GjZ"/>
+                        <outlet property="myName" destination="PzE-Xd-P34" id="5NJ-ej-lzZ"/>
                         <outlet property="myRankView" destination="7j8-Bh-lTL" id="boU-wz-4OV"/>
                         <outlet property="myStarRatingView" destination="nXQ-72-9d0" id="84s-2M-mUe"/>
                         <outlet property="rankLabel" destination="HRC-dt-wKr" id="RPA-ty-4gG"/>

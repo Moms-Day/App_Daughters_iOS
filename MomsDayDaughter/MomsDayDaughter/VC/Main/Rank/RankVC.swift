@@ -63,6 +63,12 @@ class RankVC: UIViewController {
         
     }
     
+    func callApi() {
+        let hospitalVC = viewControllers[0] as! RankContentVC
+        let careworkerVC = viewControllers[1] as! RankContentVC
+        hospitalVC.callApi()
+        careworkerVC.callApi()
+    }
 }
 
 extension RankVC: UIPageViewControllerDelegate {

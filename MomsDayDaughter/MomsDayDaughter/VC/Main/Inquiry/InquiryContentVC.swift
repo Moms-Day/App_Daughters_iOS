@@ -158,4 +158,3 @@ internal class Schedule {
         self.work = work
     }
 }
-
