@@ -38,6 +38,13 @@ class MainVC: UITabBarController {
         callApi()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goRank" {
+            let vc = segue.destination as! RankVC
+            vc.callApi()
+        }
+    }
+    
     func callApi() {
         
         let header: HTTPHeaders = ["Authorization" : "JWT \(UserDefaults.standard.string(forKey: "accessToken")!)"]
@@ -46,7 +53,7 @@ class MainVC: UITabBarController {
             (response:DataResponse<[MainModel]>) in
             
             if response.response?.statusCode == 200 {
-                if response.result.value == nil {
+                if response.result.value?.isEmpty ?? true {
                     let alert = UIAlertController(title: "해당기능을 사용하기 위해선 요양보호사와의 연결이 필요합니다.", message: "요양보호사와 연결하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
                     alert.addAction(UIAlertAction(title: "연결하기", style: UIAlertAction.Style.default, handler: {(UIAlertAction) -> Void in _ = self.performSegue(withIdentifier: "goConnect", sender: nil)}))
                     alert.addAction(UIAlertAction(title: "랭킹보기", style: UIAlertAction.Style.default, handler: {(UIAlertAction) -> Void in _ = self.performSegue(withIdentifier: "goRank", sender: nil)}))
