@@ -12,6 +12,8 @@
 		C90F693D21AE894A000DF237 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90F693C21AE894A000DF237 /* Shape.swift */; };
 		C929FB322203EE99003B7A97 /* icon_pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = C929FB312203EE99003B7A97 /* icon_pencil.png */; };
 		C929FB3422040602003B7A97 /* RankContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C929FB3322040602003B7A97 /* RankContentVC.swift */; };
+		C954F84D2239464100B6C4E5 /* CareworkerInformModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C954F84C2239464100B6C4E5 /* CareworkerInformModel.swift */; };
+		C954F84F2239465900B6C4E5 /* HospitalInformModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C954F84E2239465900B6C4E5 /* HospitalInformModel.swift */; };
 		C962E07221EDC77E00CBAB6A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C962E07121EDC77E00CBAB6A /* SignUpVC.swift */; };
 		C963C25321AADB4800309467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963C25221AADB4800309467 /* AppDelegate.swift */; };
 		C963C25521AADB4800309467 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963C25421AADB4800309467 /* LoginVC.swift */; };
@@ -69,6 +71,8 @@
 		C90F693C21AE894A000DF237 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		C929FB312203EE99003B7A97 /* icon_pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pencil.png; sourceTree = "<group>"; };
 		C929FB3322040602003B7A97 /* RankContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankContentVC.swift; sourceTree = "<group>"; };
+		C954F84C2239464100B6C4E5 /* CareworkerInformModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareworkerInformModel.swift; sourceTree = "<group>"; };
+		C954F84E2239465900B6C4E5 /* HospitalInformModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalInformModel.swift; sourceTree = "<group>"; };
 		C962E07121EDC77E00CBAB6A /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		C963C24F21AADB4800309467 /* MomsDayDaughter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomsDayDaughter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C963C25221AADB4800309467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -308,6 +312,8 @@
 				C970E2A32231FBCA00776D41 /* InquiryModel.swift */,
 				C9B6F6682236AAA2004801A2 /* FacilityRankModel.swift */,
 				C96AB3C222377A3500CC5483 /* CareworkerRankModel.swift */,
+				C954F84C2239464100B6C4E5 /* CareworkerInformModel.swift */,
+				C954F84E2239465900B6C4E5 /* HospitalInformModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -524,12 +530,14 @@
 				C9896D1E220C200C00EB7E29 /* HospitalInformVC.swift in Sources */,
 				C90F693D21AE894A000DF237 /* Shape.swift in Sources */,
 				C9CB929221F9B433007513C3 /* InquiryVC.swift in Sources */,
+				C954F84D2239464100B6C4E5 /* CareworkerInformModel.swift in Sources */,
 				C97ECC2A21AFA7F7000F9218 /* Color.swift in Sources */,
 				C970E2A42231FBCA00776D41 /* InquiryModel.swift in Sources */,
 				C9ABFB7722312E1100C4F520 /* MainModel.swift in Sources */,
 				C962E07221EDC77E00CBAB6A /* SignUpVC.swift in Sources */,
 				C9CB929421F9B5AA007513C3 /* InquiryContentVC.swift in Sources */,
 				C96AB3C322377A3500CC5483 /* CareworkerRankModel.swift in Sources */,
+				C954F84F2239465900B6C4E5 /* HospitalInformModel.swift in Sources */,
 				C963C25321AADB4800309467 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

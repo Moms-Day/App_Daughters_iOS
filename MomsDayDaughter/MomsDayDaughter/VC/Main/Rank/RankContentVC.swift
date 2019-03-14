@@ -27,6 +27,7 @@ class RankContentVC: UIViewController {
     var hospitalRanking: [Hospital]? = []
     var myCareworker: [Careworker]? = []
     var careworkerRanking: [Careworker]? = []
+    var selectedCode: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +64,16 @@ class RankContentVC: UIViewController {
         rankTableView.reloadData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showHospitalInform" {
+            let hospitalInformVC = segue.destination as! HospitalInformVC
+            hospitalInformVC.facilityCode = self.selectedCode
+        } else if segue.identifier == "showCareworkerInform" {
+            let careworkerInformVC = segue.destination as! CareworkerInformVC
+            careworkerInformVC.careId = self.selectedCode
+        }
+    }
+    
     func callApi() {
         if id {
             let header: HTTPHeaders = ["Authorization" : "JWT \(UserDefaults.standard.string(forKey: "accessToken")!)"]
@@ -92,8 +103,10 @@ class RankContentVC: UIViewController {
     @objc func goRankInform(sender : UITapGestureRecognizer) {
         if id {
             self.performSegue(withIdentifier: "showHospitalInform", sender: nil)
+            selectedCode = UserDefaults.standard.string(forKey: "facilityCode") ?? ""
         } else {
             self.performSegue(withIdentifier: "showCareworkerInform", sender: nil)
+            selectedCode = UserDefaults.standard.string(forKey: "careId") ?? ""
         }
     }
 }
@@ -117,9 +130,18 @@ extension RankContentVC: UITableViewDataSource,UITableViewDelegate {
             cell.rankStarRatingView.value = CGFloat(careworkerRanking![indexPath.row].overall)
         }
         cell.rankStarRatingView.isUserInteractionEnabled = false
-        cell.rankView.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(goRankInform)))
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if id {
+            selectedCode = hospitalRanking![indexPath.row].facilityCode
+            self.performSegue(withIdentifier: "showHospitalInform", sender: nil)
+        } else {
+            selectedCode = careworkerRanking![indexPath.row].careworkerId
+            self.performSegue(withIdentifier: "showCareworkerInform", sender: nil)
+        }
     }
 }
 

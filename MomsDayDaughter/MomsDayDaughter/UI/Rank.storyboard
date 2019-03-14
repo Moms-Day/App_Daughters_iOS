@@ -822,6 +822,9 @@
                                                                 <constraint firstItem="Nen-bW-gT2" firstAttribute="centerY" secondItem="vaG-Ey-bZZ" secondAttribute="centerY" id="s3h-z8-NM2"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="oneLineText" destination="Nen-bW-gT2" id="N2b-Qc-d2P"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                                 <connections>
@@ -887,6 +890,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FqO-OD-Occ"/>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="9Tw-Xb-Igh" id="cik-Th-5Or"/>
+                        <outlet property="bioLabel" destination="To6-DJ-Bmc" id="UyF-6x-Ghj"/>
+                        <outlet property="holpitalNameLabel" destination="yqr-W1-Ru2" id="Pg8-5J-QMB"/>
+                        <outlet property="oneLineTableView" destination="k8v-Ap-Mb3" id="e2p-az-0a7"/>
+                        <outlet property="overallStarRatingView" destination="Foe-iz-3lg" id="EYs-xl-BEB"/>
+                        <outlet property="phoneNumLabel" destination="lDQ-nA-wfZ" id="6qF-wU-5Vi"/>
+                        <outlet property="scoreCostLabel" destination="FgY-UC-eC1" id="s3B-wm-mhq"/>
+                        <outlet property="scoreFacilityLabel" destination="15w-cu-xpo" id="bd8-NJ-gfx"/>
+                        <outlet property="scoreMealLabel" destination="bp7-Rc-q4i" id="Eo9-O3-8P0"/>
+                        <outlet property="scoreScheduleLabel" destination="ikd-oI-dOL" id="xA4-He-7ha"/>
+                        <outlet property="scoreServiceLabel" destination="MyE-ae-Wqd" id="RTw-Ai-pVG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kt2-pb-jc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1055,7 +1071,7 @@
                                     <constraint firstAttribute="height" constant="110" id="8cO-KG-Gkb"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reviewCell" id="1gx-4t-66z" customClass="reviewDTO" customModule="MomsDayDaughter" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reviewCell" id="1gx-4t-66z" customClass="careworkerReviewDTO" customModule="MomsDayDaughter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="335" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="reviewCell" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1gx-4t-66z" id="mLT-Sf-nI4">
@@ -1077,8 +1093,15 @@
                                                 <constraint firstItem="u9Y-3q-GsC" firstAttribute="centerY" secondItem="mLT-Sf-nI4" secondAttribute="centerY" id="GG6-6T-wSk"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="oneLineText" destination="u9Y-3q-GsC" id="wWT-ug-mah"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="OzK-es-MLu" id="6c8-ep-Tnb"/>
+                                    <outlet property="delegate" destination="OzK-es-MLu" id="qbU-W2-tio"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1104,6 +1127,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ECv-Oi-oiX"/>
                     </view>
+                    <connections>
+                        <outlet property="bioLabel" destination="AbE-TV-OGh" id="sPp-Fc-lAP"/>
+                        <outlet property="careerLabel" destination="xJF-Qr-kkx" id="QGl-fP-he2"/>
+                        <outlet property="diligenceLabel" destination="52v-k1-Hje" id="DqJ-fi-TD6"/>
+                        <outlet property="imageView" destination="tkv-cw-QZb" id="pZG-xJ-37i"/>
+                        <outlet property="kindnessLabel" destination="NhL-Ic-SdL" id="7ec-Go-0Bh"/>
+                        <outlet property="nameLabel" destination="C3b-si-u0w" id="ZJ4-hq-omc"/>
+                        <outlet property="oneLIneTableView" destination="MHK-Xl-BjT" id="anD-0f-8Ds"/>
+                        <outlet property="totalStarRatingView" destination="Q3c-5U-oQ7" id="rz0-vx-IMy"/>
+                        <outlet property="workplaceLabel" destination="LH5-FT-GYp" id="Vi4-zw-Vra"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fns-HO-db8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
