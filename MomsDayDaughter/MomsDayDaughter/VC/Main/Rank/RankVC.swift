@@ -43,8 +43,10 @@ class RankVC: UIViewController {
             switch segmentedControl.selectedSegmentIndex {
             case 0:
                 evaluateVC.id = true
+                evaluateVC.code = UserDefaults.standard.string(forKey: "facilityCode")!
             default:
                 evaluateVC.id = false
+                evaluateVC.code = UserDefaults.standard.string(forKey: "careId")!
             }
         }
     }

@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyStarRatingView
+import DLRadioButton
 
 class HospitalInformVC: UIViewController {
     
@@ -39,11 +40,11 @@ class HospitalInformVC: UIViewController {
             self.phoneNumLabel.text = model?.phoneNumber
             self.addressLabel.text = model?.address
             self.bioLabel.text = model?.bio
-            self.scoreFacilityLabel.text = "\((model?.scoreFacility)!)점"
-            self.scoreMealLabel.text = "\((model?.scoreMeal)!)점"
-            self.scoreScheduleLabel.text = "\((model?.scoreSchedule)!)점"
-            self.scoreCostLabel.text = "\((model?.scoreCost)!)점"
-            self.scoreServiceLabel.text = "\((model?.scoreService)!)점"
+            self.scoreFacilityLabel.text = "\((model?.scoreFacility) ?? 0)점"
+            self.scoreMealLabel.text = "\((model?.scoreMeal) ?? 0)점"
+            self.scoreScheduleLabel.text = "\((model?.scoreSchedule) ?? 0)점"
+            self.scoreCostLabel.text = "\((model?.scoreCost) ?? 0)점"
+            self.scoreServiceLabel.text = "\((model?.scoreService) ?? 0)점"
             self.overallStarRatingView.value = CGFloat(model?.overall ?? 0)
             self.oneLineE = model?.oneLineE ?? [""]
             self.oneLineTableView.reloadData()
