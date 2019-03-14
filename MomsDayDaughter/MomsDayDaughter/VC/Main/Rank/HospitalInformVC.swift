@@ -34,21 +34,27 @@ class HospitalInformVC: UIViewController {
         
         let url = "http://52.78.5.142/daughter/info/facility/\(facilityCode)"
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseObject {(response: DataResponse<HospitalInformModel>) in
-            let model = response.result.value
             
-            self.holpitalNameLabel.text = model?.name
-            self.phoneNumLabel.text = model?.phoneNumber
-            self.addressLabel.text = model?.address
-            self.bioLabel.text = model?.bio
-            self.scoreFacilityLabel.text = "\((model?.scoreFacility) ?? 0)점"
-            self.scoreMealLabel.text = "\((model?.scoreMeal) ?? 0)점"
-            self.scoreScheduleLabel.text = "\((model?.scoreSchedule) ?? 0)점"
-            self.scoreCostLabel.text = "\((model?.scoreCost) ?? 0)점"
-            self.scoreServiceLabel.text = "\((model?.scoreService) ?? 0)점"
-            self.overallStarRatingView.value = CGFloat(model?.overall ?? 0)
-            self.oneLineE = model?.oneLineE ?? [""]
-            self.oneLineTableView.reloadData()
-            
+            if response.response?.statusCode == 200 {
+                let model = response.result.value
+                
+                self.holpitalNameLabel.text = model?.name
+                self.phoneNumLabel.text = model?.phoneNumber
+                self.addressLabel.text = model?.address
+                self.bioLabel.text = model?.bio
+                self.scoreFacilityLabel.text = "\((model?.scoreFacility) ?? 0)점"
+                self.scoreMealLabel.text = "\((model?.scoreMeal) ?? 0)점"
+                self.scoreScheduleLabel.text = "\((model?.scoreSchedule) ?? 0)점"
+                self.scoreCostLabel.text = "\((model?.scoreCost) ?? 0)점"
+                self.scoreServiceLabel.text = "\((model?.scoreService) ?? 0)점"
+                self.overallStarRatingView.value = CGFloat(model?.overall ?? 0)
+                self.oneLineE = model?.oneLineE ?? [""]
+                self.oneLineTableView.reloadData()
+            } else {
+                let alert = UIAlertController(title: "오류", message: "\((response.response?.statusCode)!)", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
         }
     }
 }
