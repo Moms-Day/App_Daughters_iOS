@@ -115,6 +115,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XMM-tE-Wfd"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="kHj-KC-g2p" id="Q15-jj-Hda"/>
+                        <outlet property="parentPickerView" destination="JtC-A1-Ke9" id="KVz-g6-MbO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seD-ed-Djf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -36,7 +36,6 @@ class RankContentVC: UIViewController {
             myLabel.text = "나의 병원"
             rankLabel.text = "병원 순위"
             rankTableView.height = CGFloat((110*(hospitalRanking?.count ?? 1)))
-            print("ㅁㄴㅇㄹㅁㄴㅇㄹ")
             if myHospital?.count != 0 {
                 for i in (myHospital?.indices)! {
                     if myHospital![i].facilityCode == UserDefaults.standard.string(forKey: "facilityCode") {
@@ -62,7 +61,6 @@ class RankContentVC: UIViewController {
         }
         
         self.myRankView.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(goRankInform)))
-        print("ㅁㅇㄴㄹㅁㅇㄴㄹ  \(hospitalRanking)")
         rankTableView.reloadData()
     }
     
@@ -83,13 +81,12 @@ class RankContentVC: UIViewController {
                 let model = response.result.value
                 for i in (model?.facilityRanking?.indices)! {
                     self.hospitalRanking?.append(Hospital(address: (model?.facilityRanking![i].address) ?? "", facilityCode: (model?.facilityRanking![i].facilityCode) ?? "", imagePath: (model?.facilityRanking![i].imagePath) ?? "", name: (model?.facilityRanking![i].name) ?? "", overall: (model?.facilityRanking![i].overall) ?? 0.0))
-                    print("ㅁㅇㄴㄹ  \(self.hospitalRanking)")
                 }
                 for i in (model?.myFacility?.indices)! {
                     self.myHospital?.append(Hospital(address: (model?.myFacility![i].address) ?? "", facilityCode: (model?.myFacility![i].facilityCode) ?? "", imagePath: (model?.myFacility![i].imagePath) ?? "", name: (model?.myFacility![i].name) ?? "", overall: (model?.myFacility![i].overall) ?? 0.0))
                 }
                 
-                self.reloadData()
+//                self.reloadData()
             }
         } else {
             let header: HTTPHeaders = ["Authorization" : "JWT \(UserDefaults.standard.string(forKey: "accessToken")!)"]
@@ -106,7 +103,6 @@ class RankContentVC: UIViewController {
     }
     
     func reloadData() {
-        print("ㅁㄴㅇㄹㅁㄴㅇㄹ \(hospitalRanking)")
         rankTableView.height = CGFloat((110*(hospitalRanking?.count ?? 1)))
         rankTableView.reloadData()
     }

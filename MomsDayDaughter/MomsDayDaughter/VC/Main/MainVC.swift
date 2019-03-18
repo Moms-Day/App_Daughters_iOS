@@ -15,7 +15,7 @@ class MainVC: UITabBarController {
     
     private var pageViewController: UIPageViewController!
     var titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 44))
-    
+    var parentName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +52,7 @@ class MainVC: UITabBarController {
         Alamofire.request("http://52.78.5.142/daughter/main", method: .get, parameters: nil,encoding: JSONEncoding.default, headers: header).responseArray {
             (response:DataResponse<[MainModel]>) in
             
+            print(response.result.value?.toJSONString())
             if response.response?.statusCode == 200 {
                 if response.result.value?.isEmpty ?? true {
                     let alert = UIAlertController(title: "해당기능을 사용하기 위해선 요양보호사와의 연결이 필요합니다.", message: "요양보호사와 연결하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
@@ -60,8 +61,19 @@ class MainVC: UITabBarController {
                     self.present(alert, animated: true, completion: nil)
                 } else {
 
-                    let mainModel: MainModel = response.result.value![0]
-                    self.titleLabel.text = mainModel.name
+                    var mainModel: MainModel = response.result.value![0]
+                    
+                    if self.parentName != nil {
+                        self.titleLabel.text = self.parentName!
+                    } else {
+                        self.titleLabel.text = mainModel.name
+                    }
+                    
+                    for i in (response.result.value?.indices)! {
+                            if response.result.value![i].name == self.parentName {
+                                mainModel = response.result.value![i]
+                            }
+                        }
                     UserDefaults.standard.set(mainModel.id, forKey: "parentId")
                     UserDefaults.standard.set(mainModel.careId, forKey: "careId")
                     UserDefaults.standard.set(mainModel.facilityCode, forKey: "facilityCode")
