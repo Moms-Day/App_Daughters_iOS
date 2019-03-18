@@ -148,10 +148,6 @@ internal class SignUpFirstContentVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    func asdf() {
-        
-    }
 }
 
 internal class SignUpSecondContentVC: UIViewController {

@@ -31,6 +31,7 @@
 		C9896D1E220C200C00EB7E29 /* HospitalInformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9896D1D220C200C00EB7E29 /* HospitalInformVC.swift */; };
 		C99CC07B222AD469006DB2AE /* CareworkerInformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99CC07A222AD469006DB2AE /* CareworkerInformVC.swift */; };
 		C9A08AD3223F85F500FF420C /* MyPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A08AD2223F85F500FF420C /* MyPageModel.swift */; };
+		C9A08AD5223FAB6700FF420C /* SearchHospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A08AD4223FAB6700FF420C /* SearchHospitalModel.swift */; };
 		C9AA8F8C2226C064000575DF /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B998C321F6EF4600A84CB8 /* Chat.storyboard */; };
 		C9ABFB7722312E1100C4F520 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ABFB7622312E1100C4F520 /* MainModel.swift */; };
 		C9B21CD0222E615700A21DC5 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B21CCF222E615700A21DC5 /* MyPageVC.swift */; };
@@ -95,6 +96,7 @@
 		C9896D1D220C200C00EB7E29 /* HospitalInformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalInformVC.swift; sourceTree = "<group>"; };
 		C99CC07A222AD469006DB2AE /* CareworkerInformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareworkerInformVC.swift; sourceTree = "<group>"; };
 		C9A08AD2223F85F500FF420C /* MyPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
+		C9A08AD4223FAB6700FF420C /* SearchHospitalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHospitalModel.swift; sourceTree = "<group>"; };
 		C9ABFB7622312E1100C4F520 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		C9B21CCF222E615700A21DC5 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 		C9B21CD1222E664E00A21DC5 /* ChangeMyInformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeMyInformVC.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 				C954F84C2239464100B6C4E5 /* CareworkerInformModel.swift */,
 				C954F84E2239465900B6C4E5 /* HospitalInformModel.swift */,
 				C9A08AD2223F85F500FF420C /* MyPageModel.swift */,
+				C9A08AD4223FAB6700FF420C /* SearchHospitalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				C9B21CD4222E666400A21DC5 /* ConnectVC.swift in Sources */,
 				C9B21CD6222E667D00A21DC5 /* SearchHospitalVC.swift in Sources */,
 				C9F09966222EA77300527669 /* LoginModel.swift in Sources */,
+				C9A08AD5223FAB6700FF420C /* SearchHospitalModel.swift in Sources */,
 				C9D8B2C221B5744000D3C6A4 /* MainVC.swift in Sources */,
 				C929FB3422040602003B7A97 /* RankContentVC.swift in Sources */,
 				C9B21CD0222E615700A21DC5 /* MyPageVC.swift in Sources */,

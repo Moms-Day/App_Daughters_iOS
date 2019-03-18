@@ -52,7 +52,6 @@ class MainVC: UITabBarController {
         Alamofire.request("http://52.78.5.142/daughter/main", method: .get, parameters: nil,encoding: JSONEncoding.default, headers: header).responseArray {
             (response:DataResponse<[MainModel]>) in
             
-            print(response.result.value?.toJSONString())
             if response.response?.statusCode == 200 {
                 if response.result.value?.isEmpty ?? true {
                     let alert = UIAlertController(title: "해당기능을 사용하기 위해선 요양보호사와의 연결이 필요합니다.", message: "요양보호사와 연결하시겠습니까?", preferredStyle: UIAlertController.Style.alert)

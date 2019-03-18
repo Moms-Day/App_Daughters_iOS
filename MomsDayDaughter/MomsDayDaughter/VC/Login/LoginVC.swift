@@ -36,6 +36,7 @@ class LoginVC: UIViewController {
                 if response.response?.statusCode == 200 {
                     let loginModel = response.result.value
                     UserDefaults.standard.set(loginModel?.accessToken, forKey: "accessToken")
+                    UserDefaults.standard.set((self.idLabel.text)!, forKey: "id")
                     self.performSegue(withIdentifier: "goMain", sender: nil)
                 } else {
                     let alert = UIAlertController(title: "오류", message: "아이디 또는 비밀번호가 맞지 않습니다.", preferredStyle: UIAlertController.Style.alert)
