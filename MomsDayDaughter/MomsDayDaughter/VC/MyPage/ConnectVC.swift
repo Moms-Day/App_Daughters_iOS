@@ -75,7 +75,7 @@ class ConnectVC: UIViewController {
                 
                 if response.response?.statusCode == 201 {
                     let alert = UIAlertController(title: "연결요청이 완료되었습니다.", message: "", preferredStyle: UIAlertController.Style.alert)
-                    alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: {(UIAlertAction) -> Void in _ = self.navigationController?.popToRootViewController(animated: true)}))
+                    alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: {(UIAlertAction) -> Void in _ = self.navigationController?.popViewController(animated: true)}))
                     self.present(alert, animated: true, completion: nil)
                 } else {
                     let alert = UIAlertController(title: "오류", message: "\(response.response?.statusCode)", preferredStyle: UIAlertController.Style.alert)
